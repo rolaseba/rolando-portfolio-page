@@ -6,7 +6,7 @@
     "location": "Rosario, ARG",
     "email": "sj.rolando@gmail.com",
     "phone": "+54 9291 4474-365",
-    "profileImage": "/profile-user.jpg"
+    "profileImage": "./profile-user.jpg"
   },
   "brand": {
     "name": "Sebastián Rolando",
@@ -133,7 +133,7 @@
       "id": 1,
       "title": "LSTM Energy Demand Prediction",
       "description": "LSTM-based model for hourly electricity demand forecasting using PGCB (Bangladesh Power Grid Company) data. Implements 24-hour multi-step ahead forecasting with MAPE of 3.95%, enabling proactive resource management for grid operators managing ~25,700 MW of installed capacity.",
-      "image": "/projects/lstm-energy.png",
+      "image": "./projects/lstm-energy.png",
       "technologies": [
         "TensorFlow/Keras",
         "Python",
@@ -158,7 +158,7 @@
       "id": 2,
       "title": "Hotel Reservation Cancellation Prediction",
       "description": "Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.",
-      "image": "/projects/hotel-cancellation.png",
+      "image": "./projects/hotel-cancellation.png",
       "technologies": [
         "Python",
         "Scikit-learn",
@@ -181,7 +181,7 @@
       "id": 3,
       "title": "Spare Parts Consumption Anomaly Detection",
       "description": "Anomaly detection system for industrial warehouse item consumption using EWMA, Z-score, CUSUM, and peak detection algorithms. Enables proactive maintenance and stock control by identifying abnormal consumption patterns before they escalate.",
-      "image": "/projects/anomally-detection.png",
+      "image": "./projects/anomally-detection.png",
       "technologies": [
         "Python",
         "Pandas",
@@ -204,7 +204,7 @@
       "id": 4,
       "title": "Material Cost Behavior & Supplier Performance Analysis",
       "description": "Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.",
-      "image": "/projects/cost-behavior.png",
+      "image": "./projects/cost-behavior.png",
       "technologies": [
         "Python",
         "Pandas",
@@ -224,7 +224,7 @@
       "id": 5,
       "title": "Malt Production Performance Optimization",
       "description": "Proof-of-concept analysis of 13 years of malt production data (350 TN/year plant) using correlation analysis to identify parameters with greatest influence on production yield and costs. Bridges technical process control with commercial negotiations.",
-      "image": "/projects/product-optimization.png",
+      "image": "./projects/product-optimization.png",
       "technologies": [
         "Python",
         "Pandas",
@@ -246,7 +246,7 @@
       "id": 6,
       "title": "Process & Sensors Mapping Project",
       "description": "Interactive hierarchical visualization tool mapping production processes and PLC tags for global digitalization initiative. Enables integration with Aveva PI system for signal acquisition and monitoring.",
-      "image": "/projects/process-mapping.png",
+      "image": "./projects/process-mapping.png",
       "technologies": [
         "Python",
         "Pandas",
