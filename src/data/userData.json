@@ -1,0 +1,412 @@
+{
+  "personal": {
+    "name": "Sebastián Rolando",
+    "title": "Electronics Engineer | Data & Analytics Expert (Operations & Supply Chain Optimization)",
+    "bio": "I am an Electronics Engineer and Senior Data Analyst specialized in industrial operations. I apply Machine Learning and Data Science techniques to solve complex problems across interconnected areas such as Supply Chain, Maintenance, Procurement, Quality, and Production. I have designed and implemented end-to-end solutions, generating savings of ~USD 255K/year and reducing stock-outs from 14% to 2%, among other achievements. My expertise in Python (Pandas, Scikit-learn, Statsmodels), SQL, and statistical/time series analysis is complemented by a deep understanding of industrial processes. This allows me to transform data into decisions with a direct impact on efficiency and costs.",
+    "location": "Rosario, ARG",
+    "email": "sj.rolando@gmail.com",
+    "phone": "+54 9291 4474-365",
+    "profileImage": "/profile-user.jpg"
+  },
+  "brand": {
+    "name": "Sebastián Rolando",
+    "tagline": "Transforming industrial data into operational value through Machine Learning and Data Science"
+  },
+  "social": {
+    "github": "https://github.com/rolaseba",
+    "linkedin": "https://www.linkedin.com/in/sjrolando",
+    "email": "sj.rolando@gmail.com"
+  },
+  "about": {
+    "description": [
+      "I am an Electronics Engineer and Data Scientist specialized in Industrial Operations, with experience applying Machine Learning to solve complex problems in Supply Chain, Maintenance, Procurement, Quality, and Production.",
+      "I have designed and implemented end-to-end solutions, generating savings of ~USD 255K and reducing stock-outs from 14% to 2%, among other achievements. My expertise in Python (Pandas, Sklearn, Statsmodels), SQL, and statistical/time series analysis combines with a deep understanding of industrial processes, turning data into decisions with direct impact on efficiency and costs.",
+      "In my last five companies, I have developed new roles, led multidisciplinary teams, and bridged business goals with technology, with a clear focus on creating value in challenging environments."
+    ],
+    "whatIDo": [
+      "I turn complex industrial data into decisions",
+      "I create analytics solutions that save costs",
+      "I improve supply chains, inventory, and reliability",
+      "I connect operations, data, and business value"
+    ],
+    "stats": [
+      {
+        "number": "12+ Years",
+        "label": "Years Experience"
+      },
+      {
+        "number": "~$255K",
+        "label": "Annual Savings Generated"
+      },
+      {
+        "number": "12% ↓",
+        "label": "Stock-out Reduction"
+      },
+      {
+        "number": "98.4%",
+        "label": "Plant Reliability"
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "title": "Languages & Libraries",
+        "skills": [
+          "SQL",
+          "Python (Pandas, NumPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn, Plotly)",
+          "Chainlit"
+        ],
+        "color": "from-blue-500 to-blue-600"
+      },
+      {
+        "title": "Techniques & Methods",
+        "skills": [
+          "Machine Learning",
+          "Statistical Analysis",
+          "Time Series Analysis",
+          "Anomaly Detection",
+          "Feature Engineering",
+          "Correlation & Causality Analysis",
+          "Data Communication & Dashboarding"
+        ],
+        "color": "from-teal-500 to-teal-600"
+      },
+      {
+        "title": "Tools & Platforms",
+        "skills": [
+          "Power BI",
+          "Git",
+          "Jupyter",
+          "VS Code",
+          "Scrum/Agile",
+          "Deepnote"
+        ],
+        "color": "from-purple-500 to-purple-600"
+      },
+      {
+        "title": "Domain Expertise",
+        "skills": [
+          "Inventory Management (MRO)",
+          "Supply Chain",
+          "Procurement",
+          "Maintenance Management",
+          "Industrial Production",
+          "Lean Six Sigma (Green Belt)",
+          "5S",
+          "TPM",
+          "SAP",
+          "IBM Maximo"
+        ],
+        "color": "from-green-500 to-green-600"
+      }
+    ],
+    "proficiency": [
+      {
+        "skill": "Python & Data Science",
+        "level": 95
+      },
+      {
+        "skill": "Machine Learning",
+        "level": 90
+      },
+      {
+        "skill": "Statistical Analysis",
+        "level": 92
+      },
+      {
+        "skill": "Data Visualization",
+        "level": 88
+      },
+      {
+        "skill": "Supply Chain Analytics",
+        "level": 90
+      },
+      {
+        "skill": "Operations Management",
+        "level": 85
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "LSTM Energy Demand Prediction",
+      "description": "LSTM-based model for hourly electricity demand forecasting using PGCB (Bangladesh Power Grid Company) data. Implements 24-hour multi-step ahead forecasting with MAPE of 3.95%, enabling proactive resource management for grid operators managing ~25,700 MW of installed capacity.",
+      "image": "/projects/lstm-energy.png",
+      "technologies": [
+        "TensorFlow/Keras",
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly",
+        "Scikit-learn"
+      ],
+      "category": "Time Series",
+      "results": [
+        "MAPE: 3.95% (below 5% target)",
+        "Strong diurnal cycle capture",
+        "Real-time 24-hour forecasting capability",
+        "Proactive resource management for grid stability"
+      ],
+      "github": "https://github.com/rolaseba/energy-demand-forecasting-lstm",
+      "demo": "https://energy-demand-forecasting-lstm.streamlit.app"
+    },
+    {
+      "id": 2,
+      "title": "Hotel Reservation Cancellation Prediction",
+      "description": "Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.",
+      "image": "/projects/hotel-cancellation.png",
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "XGBoost",
+        "CatBoost",
+        "SVMSMOTE",
+        "Streamlit"
+      ],
+      "category": "Machine Learning",
+      "results": [
+        "88.2% accuracy, 84% sensitivity",
+        "83% precision for efficient budget allocation",
+        "Production-ready Streamlit application",
+        "Addresses $670K annual revenue loss"
+      ],
+      "github": "https://github.com/rolaseba/hotel-reservation-prediction",
+      "demo": "https://hotel-reservation-prediction.streamlit.app"
+    },
+    {
+      "id": 3,
+      "title": "Spare Parts Consumption Anomaly Detection",
+      "description": "Anomaly detection system for industrial warehouse item consumption using EWMA, Z-score, CUSUM, and peak detection algorithms. Enables proactive maintenance and stock control by identifying abnormal consumption patterns before they escalate.",
+      "image": "/projects/anomally-detection.png",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly"
+      ],
+      "category": "Anomaly Detection",
+      "results": [
+        "Reduced unplanned downtime by ~0.5%",
+        "USD 58K in savings from prevented unnecessary consumption",
+        "Supports <1.6% Emergency Downtime (EDT) target"
+      ],
+      "notion": "https://sebalink.notion.site/Spare-Parts-Consumption-Anomaly-23901dccd06c8041a410cc70520fa5e8",
+      "demo": "https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true"
+    },
+    {
+      "id": 4,
+      "title": "Material Cost Behavior & Supplier Performance Analysis",
+      "description": "Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.",
+      "image": "/projects/cost-behavior.png",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Plotly"
+      ],
+      "category": "Supply Chain Analytics",
+      "results": [
+        "~150-200 KUSD potential annual savings",
+        "Identified high-value, high-risk items for prioritization",
+        "Real-time overspend alerts prevent losses",
+        "Supplier accountability supported by objective evidence"
+      ],
+      "notion": "https://sebalink.notion.site/Material-Cost-Behavior-Supplier-Performance-Analysis-66a6a4c0e0f0432da4a0d08d1f1f94b3"
+    },
+    {
+      "id": 5,
+      "title": "Malt Production Performance Optimization",
+      "description": "Proof-of-concept analysis of 13 years of malt production data (350 TN/year plant) using correlation analysis to identify parameters with greatest influence on production yield and costs. Bridges technical process control with commercial negotiations.",
+      "image": "/projects/product-optimization.png",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "SciPy"
+      ],
+      "category": "Statistical Analysis",
+      "results": [
+        "Processed 13 years of production data",
+        "Evaluated 52 variables",
+        "Identified critical parameters for yield optimization",
+        "Potential improvements in yield and energy efficiency"
+      ],
+      "notion": "https://sebalink.notion.site/Malt-Production-Performance-Optimization-23801dccd06c80238e85c326428e1270"
+    },
+    {
+      "id": 6,
+      "title": "Process & Sensors Mapping Project",
+      "description": "Interactive hierarchical visualization tool mapping production processes and PLC tags for global digitalization initiative. Enables integration with Aveva PI system for signal acquisition and monitoring.",
+      "image": "/projects/process-mapping.png",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NetworkX",
+        "Plotly",
+        "Excel"
+      ],
+      "category": "Operations Analytics",
+      "results": [
+        "Reduced complexity in managing processes and sensors",
+        "Solid foundation for Aveva PI integration",
+        "Scalable for future digitalization initiatives",
+        "Global alignment in corporate data unification"
+      ],
+      "github": "https://github.com/rolaseba/process-hierarchy-visualizer"
+    }
+  ],
+  "experience": {
+    "work": [
+      {
+        "title": "Warehouse Lead & Data Scientist",
+        "company": "Boortmalt (ex-Cargill)",
+        "location": "Rosario, ARG",
+        "period": "06/2019 – 07/2025",
+        "description": "Led warehouse operations and developed Data Science projects generating savings of ~USD 255K/year, reducing stock-outs from 14% to 2%, and enabling process digitalization.",
+        "achievements": [
+          "Developed real-time price deviation alert and analysis system with potential annual savings of USD 150-200K",
+          "Created multi-metric framework (47 metrics) identifying 45% of obsolete stock",
+          "Built anomaly detection model (EWMA, Z-score) preventing USD 58K in consumption and reducing downtime",
+          "Performed productive quality performance analysis based on 13 years of data",
+          "Developed process mapping and plant sensor tool for global digitalization project",
+          "Led procurement strategy for 5,500+ items",
+          "Managed operational warehouse team for 350,000 TN/year malt plant",
+          "Implemented digitalization projects: QR-based material dispatch and inventory",
+          "Generated USD 55.6K in savings (89.1% reduction) in operational costs",
+          "Contributed to budget optimization through data projects and ISO standards",
+          "Supported plant reliability rate of >98.4%"
+        ]
+      },
+      {
+        "title": "Warehouse Lead",
+        "company": "Cargill",
+        "location": "Argentina",
+        "period": "02/2018 – 06/2019",
+        "description": "Led 'Alvear Plant Warehouse' project for a 350,000 TN/Year malt plant, aligning with international standards and best practices.",
+        "achievements": [
+          "Performed economic and operational justification for the project",
+          "Designed the layout to meet the plant's technical supply requirements, incorporating EHS (Health, Safety, and Environment), Quality, Maintenance, and Operations needs",
+          "Developed internal and external operational procedures and workflows linking to other departments, including processes for material creation, obsolescence analysis, Purchasing Expediting, and others",
+          "Conducted the analysis, definition, and creation of a material database in IBM Maximo, which included descriptions and a purchasing strategy with reorder points for each of the 5,500+ items",
+          "Recruited and trained personnel for the Warehouses and Purchasing teams",
+          "Managed the physical and systemic movement of materials into the Warehouse, adhering to 5S methodology, Lean principles, MRO Store standards, and other complementary management processes"
+        ]
+      },
+      {
+        "title": "Maintenance Planner",
+        "company": "Cargill",
+        "location": "Argentina",
+        "period": "08/2015 – 02/2018",
+        "description": "Developed and optimized work plans, incorporating procedures, permits, and technician experience levels to ensure safe and effective operations.",
+        "achievements": [
+          "Planned and identified necessary tasks for executing maintenance work on operations. Defined work plans that included materials, permits, tools, procedures, and the required number of technicians, carefully considering experience levels for each task",
+          "Served as the Subject Matter Expert (SME) and Key User, providing support to users of the Maximo system, which was used to manage work orders and equipment data"
+        ]
+      },
+      {
+        "title": "Maintenance Scheduler",
+        "company": "Cafés La Virginia S.A.",
+        "location": "Argentina",
+        "period": "10/2013 – 08/2015",
+        "description": "Led the scheduling of preventive maintenance, ensuring its ongoing update and optimization in collaboration with the team of supervisors and in coordination with production planners. A crucial part of my role involved training and supporting the entire maintenance team during the SAP PM implementation process.",
+        "achievements": [
+          "Successfully led the implementation of SAP PM within just 4 months by coordinating with IT (local and consulting firm), Maintenance, and the Warehouse to migrate and structure equipment information and maintenance plans",
+          "Trained Maintenance and Production teams on the use of SAP PM and the management of work notifications",
+          "Managed the scheduling of work orders and optimized plans, master data, and updates in SAP PM for the entire plant (the only one in the country)",
+          "Collaborated with IT to develop Maintenance KPIs within SAP, enabling their rapid and efficient generation"
+        ]
+      },
+      {
+        "title": "Maintenance Analyst",
+        "company": "Ab Inbev",
+        "location": "Argentina",
+        "period": "08/2012 – 09/2013",
+        "description": "Managed maintenance planning and budgeting, inventory optimization, and quarterly audits. Implemented autonomous maintenance alongside the team, aligned with TPM (Total Productive Maintenance) principles.",
+        "achievements": [
+          "Scheduled, planned, and tracked the maintenance budget, in addition to managing the spare parts inventory and coordinating with suppliers for various jobs",
+          "As the Subject Matter Expert (SME), played a key role in the SAP system migration by providing training to other departments. Also conducted audits in various areas, including 5S, safety, and environmental issues, to drive continuous plant improvement"
+        ]
+      },
+      {
+        "title": "Activity Coordinator",
+        "company": "Dow Chemical",
+        "location": "Argentina",
+        "period": "02/2007 – 08/2007",
+        "description": "Managed the planning and productive coordination from five polyethylene plants to the Bagging sector with a total of 10TN/Hr, while simultaneously coordinating preventive maintenance. Also improved bagging and logistics procedures, addressing and solving quality issues on the bagging lines caused by underweight.",
+        "achievements": [
+          "Scheduled, planned, and tracked the maintenance budget, in addition to managing the spare parts inventory and coordinating with suppliers for various jobs",
+          "As the Subject Matter Expert (SME), played a key role in the SAP system migration by providing training to other departments. Also conducted audits in various areas, including 5S, safety, and environmental issues, to drive continuous plant improvement"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Electronics Engineer",
+        "school": "Universidad Tecnológica Nacional, Bahía Blanca campus",
+        "location": "Argentina",
+        "period": "2012",
+        "description": "Electronics Engineering degree program",
+        "achievements": []
+      },
+      {
+        "degree": "Postgraduate Diploma in Business Analysis",
+        "school": "Universidad Tecnológica Nacional, Buenos Aires campus",
+        "location": "Argentina",
+        "period": "2017",
+        "description": "Business Analysis postgraduate program",
+        "achievements": []
+      }
+    ],
+    "certifications": [
+      {
+        "title": "SQL for Data Science",
+        "issuer": "University of California, Davis",
+        "date": "2025"
+      },
+      {
+        "title": "Data Science Applied to Business | 6 Real Case Studies",
+        "issuer": "Udemy",
+        "date": "2024"
+      },
+      {
+        "title": "Complete Machine Learning Course: Data Science in Python",
+        "issuer": "Udemy",
+        "date": "2023"
+      },
+      {
+        "title": "Warehouse Productivity",
+        "issuer": "Axenfeld",
+        "date": "2021"
+      },
+      {
+        "title": "Lean Six Sigma - Green Belt",
+        "issuer": "Cargill Minneapolis, USA",
+        "date": "2019"
+      },
+      {
+        "title": "Six Sigma & Green Belt",
+        "issuer": "UTN FRBA",
+        "date": "2015"
+      },
+      {
+        "title": "SAP PM 6.0 Trainer",
+        "issuer": "AbInbev - C. and M. Quilmes, Buenos Aires",
+        "date": "2013"
+      },
+      {
+        "title": "Maintenance Planning",
+        "issuer": "AbInbev - C. and M. Quilmes, Buenos Aires",
+        "date": "2012"
+      }
+    ]
+  }
+}
