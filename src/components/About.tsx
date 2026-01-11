@@ -1,4 +1,4 @@
-import { Target, Clock, Award, Zap } from 'lucide-react';
+import { Target, Clock, Award, Zap, ChevronDown } from 'lucide-react';
 import { useUserData } from '../hooks/useUserData';
 
 const About = () => {
@@ -103,6 +103,19 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* Scroll indicator */}
+        <div className="mt-20 flex justify-center animate-fade-in-up">
+          <button
+            onClick={() => {
+              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-slate-300 transition-colors duration-200 flex flex-col items-center gap-2"
+            aria-label="Scroll to projects section"
+          >
+            <span className="text-xs uppercase tracking-widest font-medium">View Case Studies</span>
+            <ChevronDown className="h-5 w-5 animate-bounce-slow" />
+          </button>
         </div>
       </div>
     </section>
