@@ -1,8 +1,11 @@
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Play } from 'lucide-react';
+import { useState } from 'react';
 import { useUserData } from '../hooks/useUserData';
+import VideoModal from './VideoModal';
 
 const Hero = () => {
   const { personal, social } = useUserData();
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const scrollToAbout = () => {
     const element = document.getElementById('about');
@@ -50,6 +53,12 @@ const Hero = () => {
               </a>
             </div>
 
+            <VideoModal
+              isOpen={isVideoOpen}
+              onClose={() => setIsVideoOpen(false)}
+              videoId="J2JUHQwY0jw"
+            />
+
             <div className="flex space-x-8 pt-4">
               <a
                 href={social.github}
@@ -77,17 +86,29 @@ const Hero = () => {
 
           {/* Image */}
           <div className="flex justify-center lg:justify-end relative">
-            <div className="relative z-10">
-              <div className="w-80 h-80 sm:w-96 sm:h-96 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden shadow-2xl ring-4 ring-white dark:ring-slate-700">
-                <img
-                  src={personal.profileImage}
-                  alt={personal.name}
-                  className="w-full h-full object-cover"
-                />
+            <div className="flex flex-col items-center gap-8">
+              <div className="relative z-10">
+                <div className="w-80 h-80 sm:w-96 sm:h-96 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden shadow-2xl ring-4 ring-white dark:ring-slate-700">
+                  <img
+                    src={personal.profileImage}
+                    alt={personal.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative industrial elements */}
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-slate-100 dark:bg-slate-800 rounded-xl -z-10"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-slate-200 dark:border-slate-700 rounded-xl -z-10"></div>
               </div>
-              {/* Decorative industrial elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-slate-100 dark:bg-slate-800 rounded-xl -z-10"></div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-slate-200 dark:border-slate-700 rounded-xl -z-10"></div>
+
+              <button
+                onClick={() => setIsVideoOpen(true)}
+                className="flex items-center gap-2 bg-white dark:bg-slate-800 text-slate-900 dark:text-blue-400 border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-full font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all duration-200 shadow-lg shadow-slate-900/10 group"
+              >
+                <div className="p-1 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
+                  <Play className="w-4 h-4 fill-current" />
+                </div>
+                Watch Intro
+              </button>
             </div>
           </div>
         </div>
