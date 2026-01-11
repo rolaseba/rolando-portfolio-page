@@ -74,21 +74,32 @@ const About = () => {
             {/* Proficiency */}
             <div>
               <h3 className="text-lg font-bold text-slate-900 mb-6">Technical Expertise</h3>
-              <div className="space-y-4">
-                {skills.proficiency.slice(0, 5).map((skill, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between text-sm font-semibold text-slate-700 mb-1">
-                      <span>{skill.skill}</span>
-                      <span>{skill.level}%</span>
+              <div className="space-y-6">
+                {skills.categories.map((category, index) => {
+                  const colorMap: Record<string, string> = {
+                    "Languages & Libraries": "bg-blue-100 text-blue-800 border-blue-200",
+                    "Techniques & Methods": "bg-teal-100 text-teal-800 border-teal-200",
+                    "Tools & Platforms": "bg-purple-100 text-purple-800 border-purple-200",
+                    "Domain Expertise": "bg-green-100 text-green-800 border-green-200"
+                  };
+                  const colorClass = colorMap[category.title] || "bg-blue-100 text-blue-800 border-blue-200";
+
+                  return (
+                    <div key={index}>
+                      <h4 className="text-sm font-semibold text-slate-700 mb-3">{category.title}</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {category.skills.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className={`px-3 py-1 rounded-full text-xs font-medium border ${colorClass} shadow-sm`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                    <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
-                      <div
-                        className="absolute top-0 left-0 h-full bg-slate-800 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
