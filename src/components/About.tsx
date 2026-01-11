@@ -12,23 +12,23 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6">
             Professional Profile
           </h2>
-          <div className="w-24 h-1 bg-blue-900 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-blue-900 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* About Text */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-slate-800 border-l-4 border-blue-600 pl-4">
+            <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 border-l-4 border-blue-600 dark:border-blue-500 pl-4">
               Turning Data into Operational Value
             </h3>
 
-            <div className="prose prose-lg text-slate-600 space-y-6">
+            <div className="prose prose-lg text-slate-600 dark:text-slate-400 space-y-6">
               {about.description.map((paragraph, index) => (
                 <p key={index} className="leading-relaxed">
                   {paragraph}
@@ -36,14 +36,14 @@ const About = () => {
               ))}
             </div>
 
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-              <h4 className="text-lg font-semibold text-slate-900 mb-4 flex items-center gap-2">
-                <Zap className="h-5 w-5 text-yellow-600" /> Core Focus
+            <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-yellow-600 dark:text-yellow-400" /> Core Focus
               </h4>
               <ul className="space-y-3">
                 {about.whatIDo.map((item, index) => (
-                  <li key={index} className="flex items-center text-slate-700">
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  <li key={index} className="flex items-center text-slate-700 dark:text-slate-300">
+                    <div className="w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full mr-3"></div>
                     {item}
                   </li>
                 ))}
@@ -58,14 +58,14 @@ const About = () => {
               {about.stats.map((stat, index) => {
                 const IconComponent = iconMap[stat.label] || Zap;
                 return (
-                  <div key={index} className="p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <div key={index} className="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
                     <div className="flex items-center gap-4 mb-2">
-                      <div className="p-2 bg-blue-50 rounded-lg text-blue-700">
+                      <div className="p-2 bg-blue-50 dark:bg-blue-900/30 rounded-lg text-blue-700 dark:text-blue-300">
                         <IconComponent className="h-6 w-6" />
                       </div>
-                      <span className="text-3xl font-bold text-slate-900">{stat.number}</span>
+                      <span className="text-3xl font-bold text-slate-900 dark:text-white">{stat.number}</span>
                     </div>
-                    <div className="text-sm text-slate-600 font-medium uppercase tracking-wide">{stat.label}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium uppercase tracking-wide">{stat.label}</div>
                   </div>
                 );
               })}
@@ -73,25 +73,25 @@ const About = () => {
 
             {/* Proficiency */}
             <div>
-              <h3 className="text-lg font-bold text-slate-900 mb-6">Technical Expertise</h3>
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">Technical Expertise</h3>
               <div className="space-y-6">
                 {skills.categories.map((category, index) => {
                   const colorMap: Record<string, string> = {
-                    "Languages & Libraries": "bg-blue-100 text-blue-800 border-blue-200",
-                    "Techniques & Methods": "bg-teal-100 text-teal-800 border-teal-200",
-                    "Tools & Platforms": "bg-purple-100 text-purple-800 border-purple-200",
-                    "Domain Expertise": "bg-green-100 text-green-800 border-green-200"
+                    "Languages & Libraries": "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800",
+                    "Techniques & Methods": "bg-teal-100 text-teal-800 border-teal-200 dark:bg-teal-900/30 dark:text-teal-200 dark:border-teal-800",
+                    "Tools & Platforms": "bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-200 dark:border-purple-800",
+                    "Domain Expertise": "bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-200 dark:border-green-800"
                   };
-                  const colorClass = colorMap[category.title] || "bg-blue-100 text-blue-800 border-blue-200";
+                  const colorClass = colorMap[category.title] || "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800";
 
                   return (
                     <div key={index}>
-                      <h4 className="text-sm font-semibold text-slate-700 mb-3">{category.title}</h4>
+                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">{category.title}</h4>
                       <div className="flex flex-wrap gap-2">
                         {category.skills.map((skill, skillIndex) => (
                           <span
                             key={skillIndex}
-                            className={`px-3 py-1 rounded-full text-xs font-medium border ${colorClass} shadow-sm`}
+                            className={`px-3 py-1 rounded-full text-xs font-medium border ${colorClass} shadow-sm transition-colors duration-200`}
                           >
                             {skill}
                           </span>

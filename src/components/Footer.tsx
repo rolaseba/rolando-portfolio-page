@@ -6,13 +6,13 @@ const Footer = () => {
   const { brand, personal, social } = useUserData();
 
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <footer className="bg-slate-900 dark:bg-slate-950 text-slate-300 py-12 border-t border-slate-800 dark:border-slate-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-slate-800 p-2 rounded-lg border border-slate-700">
+              <div className="bg-slate-800 dark:bg-slate-900 p-2 rounded-lg border border-slate-700 dark:border-slate-800">
                 <Database className="h-6 w-6 text-blue-400" />
               </div>
               <span className="text-xl font-bold text-white">{brand.name}</span>
