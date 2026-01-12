@@ -54,8 +54,7 @@
         "title": "Languages & Libraries",
         "skills": [
           "SQL",
-          "Python (Pandas, NumPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn, Plotly)",
-          "Chainlit"
+          "Python (Data, Visualization & ML stack)"
         ],
         "color": "from-blue-500 to-blue-600"
       },
@@ -63,12 +62,9 @@
         "title": "Techniques & Methods",
         "skills": [
           "Machine Learning",
-          "Statistical Analysis",
-          "Time Series Analysis",
-          "Anomaly Detection",
-          "Feature Engineering",
-          "Correlation & Causality Analysis",
-          "Data Communication & Dashboarding"
+          "Time Series Forecasting",
+          "Statistical Modeling",
+          "Anomaly Detection"
         ],
         "color": "from-teal-500 to-teal-600"
       },
@@ -76,11 +72,11 @@
         "title": "Tools & Platforms",
         "skills": [
           "Power BI",
+          "SAP",
+          "IBM Maximo",
           "Git",
           "Jupyter",
-          "VS Code",
-          "Scrum/Agile",
-          "Deepnote"
+          "Scrum/Agile"
         ],
         "color": "from-purple-500 to-purple-600"
       },
@@ -94,9 +90,7 @@
           "Industrial Production",
           "Lean Six Sigma (Green Belt)",
           "5S",
-          "TPM",
-          "SAP",
-          "IBM Maximo"
+          "TPM"
         ],
         "color": "from-green-500 to-green-600"
       }
