@@ -105,6 +105,17 @@ const Projects = () => {
                           Code
                         </a>
                       )}
+                      {project.notion && (
+                        <a
+                          href={project.notion}
+                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          Details
+                        </a>
+                      )}
                       {project.demo && (
                         <a
                           href={project.demo}
@@ -114,17 +125,6 @@ const Projects = () => {
                         >
                           <ExternalLink className="h-4 w-4" />
                           View
-                        </a>
-                      )}
-                      {project.notion && !project.github && !project.demo && (
-                        <a
-                          href={project.notion}
-                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          Details
                         </a>
                       )}
                     </div>
