@@ -216,8 +216,30 @@
     },
     {
       "id": 5,
+      "title": "Warehouse Strategy & Obsolescence Reduction Project",
+      "description": "Comprehensive analysis of inventory dynamics and rotation in a multi-system warehouse environment. Consolidates and harmonizes fragmented data to design 47 custom metrics, enabling systematic identification of obsolete items, realignment of replenishment strategies (ROP, EOQ), and optimization of budget allocation towards real material usage.",
+      "image": "./projects/last_time_moved_alt.png",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly"
+      ],
+      "category": "Supply Chain Analytics",
+      "results": [
+        "Identified 40-50% of items as potentially obsolete/immobilized",
+        "Quantified several hundred KUSD in risk from inactive materials (1-3 years)",
+        "Designed 47 custom metrics (19 movement-related, 28 cost-related)",
+        "Enabled catalog depuration and justified physical space liberation"
+      ],
+      "notion": "https://sebalink.notion.site/Warehouse-Strategy-Obsolescence-Reduction-Project-25501dccd06c80e6b792d77d09d17aea"
+    },
+    {
+      "id": 6,
       "title": "Malt Production Performance Optimization",
-      "description": "Proof-of-concept analysis of 13 years of malt production data (350 TN/year plant) using correlation analysis to identify parameters with greatest influence on production yield and costs. Bridges technical process control with commercial negotiations.",
+      "description": "Analysis of 13 years of historical malt production data from a 350 TN/year malt plant, focusing on physicochemical, process, and quality parameters. The study applied data wrangling, feature selection, and correlation analysis to identify parameters with greatest influence on production yield and costs. Bridges technical process control with commercial negotiations.",
       "image": "./projects/product-optimization.png",
       "technologies": [
         "Python",
@@ -229,15 +251,15 @@
       ],
       "category": "Statistical Analysis",
       "results": [
-        "Processed 13 years of production data",
-        "Evaluated 52 variables",
-        "Identified critical parameters for yield optimization",
-        "Potential improvements in yield and energy efficiency"
+        "Processed 13 years of production data with over 52 variables evaluated",
+        "Built correlation matrices filtering only statistically significant relationships",
+        "Identified critical parameters (e.g., Efdm, PT, Fil T, S>2.5, SMKR) with directional recommendations",
+        "Quantified potential improvements in yield and energy efficiency"
       ],
       "notion": "https://sebalink.notion.site/Malt-Production-Performance-Optimization-23801dccd06c80238e85c326428e1270"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Process & Sensors Mapping Project",
       "description": "Interactive hierarchical visualization tool mapping production processes and PLC tags for global digitalization initiative. Enables integration with Aveva PI system for signal acquisition and monitoring.",
       "image": "./projects/process-mapping.png",
