@@ -94,6 +94,31 @@ const Projects = () => {
                     </div>
 
                     <div className="pt-4 flex gap-4 mt-auto">
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          Live Demo
+                        </a>
+                      )}
+                      {project.notion && (
+                        <a
+                          href={project.notion}
+                          className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 ${project.id === 3
+                              ? 'bg-transparent border-2 border-slate-900 dark:border-blue-600 text-slate-900 dark:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800'
+                              : 'bg-slate-900 dark:bg-blue-600 text-white hover:bg-slate-800 dark:hover:bg-blue-700'
+                            }`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          Case Study
+                        </a>
+                      )}
                       {project.github && (
                         <a
                           href={project.github}
@@ -103,28 +128,6 @@ const Projects = () => {
                         >
                           <Github className="h-4 w-4" />
                           Code
-                        </a>
-                      )}
-                      {project.notion && (
-                        <a
-                          href={project.notion}
-                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          Details
-                        </a>
-                      )}
-                      {project.demo && (
-                        <a
-                          href={project.demo}
-                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          View
                         </a>
                       )}
                     </div>
