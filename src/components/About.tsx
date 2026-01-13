@@ -52,18 +52,18 @@ const About = () => {
           </div>
 
           {/* Stats & Skills */}
-          <div className="space-y-12">
+          <div className="space-y-10">
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4">
               {about.stats.map((stat, index) => {
                 const IconComponent = iconMap[stat.label] || Zap;
                 return (
-                  <div key={index} className="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <div key={index} className="p-5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
                     <div className="flex items-center gap-4 mb-2">
-                      <div className="p-2 bg-blue-50 dark:bg-blue-900/30 rounded-lg text-blue-700 dark:text-blue-300">
-                        <IconComponent className="h-6 w-6" />
+                      <div className="p-1.5 bg-blue-50 dark:bg-blue-900/30 rounded-lg text-blue-700 dark:text-blue-300">
+                        <IconComponent className="h-5 w-5" />
                       </div>
-                      <span className="text-3xl font-bold text-slate-900 dark:text-white">{stat.number}</span>
+                      <span className="text-2xl font-bold text-slate-900 dark:text-white">{stat.number}</span>
                     </div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 font-medium uppercase tracking-wide">{stat.label}</div>
                   </div>
@@ -74,7 +74,7 @@ const About = () => {
             {/* Proficiency */}
             <div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">Technical Expertise</h3>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {skills.categories.map((category, index) => {
                   const colorMap: Record<string, string> = {
                     "Languages & Libraries": "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800",
@@ -86,7 +86,7 @@ const About = () => {
 
                   return (
                     <div key={index}>
-                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">{category.title}</h4>
+                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">{category.title}</h4>
                       <div className="flex flex-wrap gap-2">
                         {category.skills.map((skill, skillIndex) => (
                           <span
