@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
-import { useUserData } from '../hooks/useUserData';
+import { useUserData } from '../../hooks/useUserData';
 
 const Contact = () => {
   const { personal, social } = useUserData();

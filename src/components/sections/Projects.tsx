@@ -1,6 +1,6 @@
 import { ExternalLink, Github, BarChart3, Brain, Shield, Activity, Database, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useUserData } from '../hooks/useUserData';
+import { useUserData } from '../../hooks/useUserData';
 
 const Projects = () => {
   const { projects } = useUserData();

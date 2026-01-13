@@ -1,0 +1,107 @@
+{
+    "id": 3,
+    "slug": "spare-parts-anomaly-detection",
+    "title": "Spare Parts Consumption Anomaly Detection",
+    "subtitle": "Detecting abnormal spare parts usage to prevent downtime and optimize maintenance",
+    "keyImpact": [
+        {
+            "value": "-0.5%",
+            "label": "Downtime Reduction",
+            "description": "Unplanned downtime decrease",
+            "icon": "TrendingDown"
+        },
+        {
+            "value": "USD 58K",
+            "label": "Annual Savings",
+            "description": "Prevented unnecessary consumption",
+            "icon": "DollarSign"
+        },
+        {
+            "value": "350K TN",
+            "label": "Industrial Plant",
+            "description": "Malt production capacity/year",
+            "icon": "Factory"
+        }
+    ],
+    "sections": {
+        "overview": "This project detects anomalies in item consumption based on historical dispatch data from an industrial warehouse. It integrates data wrangling, time series analysis, seasonality detection, and anomaly detection techniques to identify unusual dispatch behavior for specific inventory items. The system supports proactive maintenance and stock control by highlighting abnormal consumption patterns before they escalate into critical failures.",
+        "businessValue": [
+            "Early detection of equipment failures and material misuse",
+            "Reduction of unnecessary stock usage and procurement costs",
+            "Improved maintenance planning and downtime prevention"
+        ],
+        "keyResults": [
+            "Reduced unplanned downtime by **~0.5%**",
+            "Maintained **<1.6% Emergency Downtime** (EDT) target",
+            "Generated **USD 58K in savings** from prevented consumption"
+        ],
+        "benefits": [
+            "Item-level anomaly detection with statistical rigor",
+            "Scalable across assets, equipment types, and locations",
+            "Enables proactive maintenance actions and inventory control"
+        ],
+        "stakeholders": [
+            "Maintenance Teams",
+            "Warehouse Management",
+            "Procurement & Planning"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Plotly",
+            "SciPy",
+            "Matplotlib",
+            "Seaborn"
+        ],
+        "methods": [
+            {
+                "name": "EWMA",
+                "description": "Exponential Weighted Moving Average for trend smoothing"
+            },
+            {
+                "name": "Z-score",
+                "description": "Statistical anomaly detection in dispatch trends"
+            },
+            {
+                "name": "CUSUM",
+                "description": "Cumulative sum for deviation analysis"
+            },
+            {
+                "name": "KDE",
+                "description": "Kernel Density Estimation for distribution modeling"
+            },
+            {
+                "name": "Peak Detection",
+                "description": "scipy.signal.find_peaks for consumption anomalies"
+            },
+            {
+                "name": "Rolling Statistics",
+                "description": "Moving averages and standard deviation for volatility detection"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot2-edit.png",
+                "caption": "Consumption Peaks – Dispatch vs Trend Analysis"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot1-edit.png",
+                "caption": "Anomaly Detection with Statistical Thresholds"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot-edit.png",
+                "caption": "Time Series Pattern Recognition"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/equipos-edit.png",
+                "caption": "Equipment-Level Consumption Tracking"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true",
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

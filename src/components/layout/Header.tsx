@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Menu, X, Database, Moon, Sun } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useUserData } from '../hooks/useUserData';
-import { useTheme } from '../hooks/useTheme';
+import { useUserData } from '../../hooks/useUserData';
+import { useTheme } from '../../hooks/useTheme';
 
 const Header = () => {
   const { brand } = useUserData();

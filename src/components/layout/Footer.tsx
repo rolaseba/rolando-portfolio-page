@@ -1,6 +1,5 @@
-import React from 'react';
 import { Database, Github, Linkedin } from 'lucide-react';
-import { useUserData } from '../hooks/useUserData';
+import { useUserData } from '../../hooks/useUserData';
 
 const Footer = () => {
   const { brand, personal, social } = useUserData();

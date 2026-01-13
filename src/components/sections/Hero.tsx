@@ -1,7 +1,7 @@
 import { ChevronDown, Github, Linkedin, Mail, Play } from 'lucide-react';
 import { useState } from 'react';
-import { useUserData } from '../hooks/useUserData';
-import VideoModal from './VideoModal';
+import { useUserData } from '../../hooks/useUserData';
+import VideoModal from '../ui/VideoModal';
 
 const Hero = () => {
   const { personal, social } = useUserData();

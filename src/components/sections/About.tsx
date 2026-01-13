@@ -1,5 +1,5 @@
 import { Target, Clock, Award, Zap, ChevronDown } from 'lucide-react';
-import { useUserData } from '../hooks/useUserData';
+import { useUserData } from '../../hooks/useUserData';
 
 const About = () => {
   const { about, skills } = useUserData();
