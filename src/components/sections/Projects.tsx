@@ -61,9 +61,9 @@ const Projects = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-800 dark:group-hover:text-blue-400 transition-colors duration-200">
-                    {project.id === 3 ? (
+                    {project.caseStudyPath ? (
                       <Link
-                        to="/projects/spare-parts-anomaly-detection"
+                        to={project.caseStudyPath}
                         className="after:absolute after:inset-0 after:z-10"
                         target="_blank"
                         rel="noopener noreferrer"

@@ -254,33 +254,19 @@ Open `src/data/userData.json` and add your project to the `projects` array:
 
 ## Step 6: Update Projects Component Routing
 
-### 6.1 Add routing logic
-Open `src/components/sections/Projects.tsx`:
+### 6.1 Link the Subpage
+Open `src/data/userData.json`. Locate your project in the `projects` array and add the `caseStudyPath` field:
 
-Find the section where project id 3 has special routing logic and add yours:
-
-```tsx
-{project.id === 3 && (
-  <Link
-    to="/projects/spare-parts-anomaly-detection"
-    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg font-semibold transition-all duration-200"
-  >
-    <ExternalLink className="h-4 w-4" />
-    Case Study
-  </Link>
-)}
-{project.id === 8 && (  // Add this for your new project
-  <Link
-    to="/projects/your-project-slug"
-    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg font-semibold transition-all duration-200"
-  >
-    <ExternalLink className="h-4 w-4" />
-    Case Study
-  </Link>
-)}
+```json
+{
+  "id": 8,
+  "title": "Your Project Title",
+  // ... other fields
+  "caseStudyPath": "/projects/your-project-slug"
+}
 ```
 
-> **Note:** Make sure to use the **outline button style** (border-2, transparent background) for case study links to match the design.
+> **Note:** The project card will automatically become clickable and link to this path in a new tab.
 
 ---
 
@@ -328,7 +314,6 @@ git add src/data/caseStudies/your-project-slug.json
 git add src/pages/case-studies/YourProjectPage.tsx
 git add src/App.tsx
 git add src/data/userData.json
-git add src/components/sections/Projects.tsx
 
 git commit -m "feat: add case study page for Your Project Name"
 git push
@@ -354,8 +339,7 @@ This will build and deploy to GitHub Pages automatically.
 - [ ] Case study data: `/src/data/caseStudies/your-project-slug.json`
 - [ ] Page component: `/src/pages/case-studies/YourProjectPage.tsx`
 - [ ] Route added in: `/src/App.tsx`
-- [ ] Project card data: `/src/data/userData.json` (projects array)
-- [ ] Link routing: `/src/components/sections/Projects.tsx`
+- [ ] Project card data (with `caseStudyPath`): `/src/data/userData.json`
 
 ### Testing
 - [ ] Dev server runs without errors
@@ -379,8 +363,8 @@ This will build and deploy to GitHub Pages automatically.
 ✅ "/rolando-portfolio-page/projects/image.png"
 ```
 
-### Issue: Case Study button not appearing
-**Solution:** Ensure project ID is added to routing logic in Projects.tsx (Step 6)
+### Issue: Case Study link not working
+**Solution:** Ensure `caseStudyPath` property is added correctly in `userData.json`.
 
 ### Issue: Route not found (404)
 **Solution:** 

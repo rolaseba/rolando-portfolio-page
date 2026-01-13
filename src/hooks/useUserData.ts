@@ -47,6 +47,7 @@ export interface UserData {
     github?: string;
     demo?: string;
     notion?: string;
+    caseStudyPath?: string;
   }>;
   experience: {
     work: Array<{

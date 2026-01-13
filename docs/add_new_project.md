@@ -26,7 +26,7 @@ Use this for major projects where you want a detailed, data-driven "Case Study" 
    - **Reference Rules:** [sub-page-designe-rules.md](./sub-page-designe-rules.md)
 3. **Draft the Data:** Create a JSON data file for the project's case study.
 4. **Implement the Page:** Create a minimal page component and register the route.
-5. **Update Routing Logic:** Add the "Case Study" button logic to the project card.
+5. **Update Project Card Data:** Link the card to your subpage by adding `caseStudyPath` to `userData.json`.
 
 > [!TIP]
 > **Detailed Implementation Steps:** [add_new_project_page.md](./add_new_project_page.md)
@@ -48,10 +48,7 @@ Use this for major projects where you want a detailed, data-driven "Case Study" 
 - [ ] Card image in `/public/projects/`
 - [ ] Figures/Screenshots in `/public/projects/Your Project/figures/`
 - [ ] Card entry in `src/data/userData.json`
-- [ ] (Optional) Case study JSON in `src/data/caseStudies/`
-- [ ] (Optional) Page file in `src/pages/case-studies/`
-- [ ] (Optional) Route in `src/App.tsx`
-- [ ] (Optional) "Case Study" button in `src/components/sections/Projects.tsx`
+- [ ] (Optional) Link to project page via `caseStudyPath` in `src/data/userData.json`
 
 ---
 

@@ -57,7 +57,8 @@ Add a new object to the `projects` array:
   ],
   "github": "https://github.com/username/repo",
   "demo": "https://your-demo-url.com",
-  "notion": null
+  "notion": "https://notion.so/...", // optional external link
+  "caseStudyPath": null // internal path (e.g., "/projects/your-slug")
 }
 ```
 
@@ -74,7 +75,8 @@ Add a new object to the `projects` array:
 | `results` | ✅ Yes | 2 key achievements | `["Result 1", "Result 2"]` |
 | `github` | ❌ No | GitHub repo URL or `null` | `"https://github.com/..."` |
 | `demo` | ❌ No | Live demo URL or `null` | `"https://demo.com"` |
-| `notion` | ❌ No | Always `null` (deprecated) | `null` |
+| `notion` | ❌ No | External Case Study URL | `"https://notion.so/..."` |
+| `caseStudyPath` | ❌ No | Internal Case Study Route | `"/projects/slug"` |
 
 ### 2.4 Available Categories
 - `Machine Learning`
@@ -139,8 +141,8 @@ If your project needs a detailed case study page:
 The case study page creation involves:
 - Creating JSON data file with detailed content
 - Creating page component
-- Adding routing
-- Updating Projects.tsx to show "Case Study" button
+- Adding routing to `App.tsx`
+- Updating `userData.json` with `caseStudyPath`
 
 **Estimated time:** 15-30 minutes additional work
 

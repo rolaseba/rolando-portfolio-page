@@ -194,7 +194,8 @@
         "Supports <1.6% Emergency Downtime (EDT) target"
       ],
       "notion": "https://sebalink.notion.site/Spare-Parts-Consumption-Anomaly-23901dccd06c8041a410cc70520fa5e8",
-      "demo": "https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true"
+      "demo": "https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true",
+      "caseStudyPath": "/projects/spare-parts-anomaly-detection"
     },
     {
       "id": 4,
