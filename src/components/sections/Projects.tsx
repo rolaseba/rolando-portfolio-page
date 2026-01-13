@@ -37,7 +37,7 @@ const Projects = () => {
             return (
               <div
                 key={project.id}
-                className="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-lg transition-all duration-300 group flex flex-col h-full"
+                className="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-lg transition-all duration-300 group flex flex-col h-full relative"
               >
                 <div className="h-48 overflow-hidden relative border-b border-slate-200/50 dark:border-slate-700/50">
                   <div className="absolute inset-0 bg-slate-900/10 dark:bg-slate-900/20 group-hover:bg-transparent transition-all duration-300 z-10"></div>
@@ -61,7 +61,27 @@ const Projects = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-800 dark:group-hover:text-blue-400 transition-colors duration-200">
-                    {project.title}
+                    {project.id === 3 ? (
+                      <Link
+                        to="/projects/spare-parts-anomaly-detection"
+                        className="after:absolute after:inset-0 after:z-10"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.title}
+                      </Link>
+                    ) : project.notion ? (
+                      <a
+                        href={project.notion}
+                        className="after:absolute after:inset-0 after:z-10"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.title}
+                      </a>
+                    ) : (
+                      project.title
+                    )}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed flex-1">
                     {project.description}
@@ -94,7 +114,7 @@ const Projects = () => {
                       </ul>
                     </div>
 
-                    <div className="pt-4 flex gap-4 mt-auto">
+                    <div className="pt-4 flex gap-4 mt-auto relative z-20">
                       {project.demo && (
                         <a
                           href={project.demo}
@@ -105,26 +125,6 @@ const Projects = () => {
                           <ExternalLink className="h-4 w-4" />
                           Live Demo
                         </a>
-                      )}
-                      {project.notion && project.id !== 3 && (
-                        <a
-                          href={project.notion}
-                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          Case Study
-                        </a>
-                      )}
-                      {project.id === 3 && (
-                        <Link
-                          to="/projects/spare-parts-anomaly-detection"
-                          className="flex-1 flex items-center justify-center gap-2 bg-transparent border-2 border-slate-900 dark:border-blue-600 text-slate-900 dark:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 py-2.5 rounded-md text-sm font-semibold transition-all duration-200"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          Case Study
-                        </Link>
                       )}
                       {project.github && (
                         <a
