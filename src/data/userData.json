@@ -62,6 +62,8 @@
         "title": "Techniques & Methods",
         "skills": [
           "Machine Learning",
+          "Supervised Learning",
+          "Neural Networks",
           "Time Series Forecasting",
           "Statistical Modeling",
           "Anomaly Detection"
@@ -86,11 +88,11 @@
           "Inventory Management (MRO)",
           "Supply Chain",
           "Procurement",
+          "5S",
+          "TPM",
           "Maintenance Management",
           "Industrial Production",
-          "Lean Six Sigma (Green Belt)",
-          "5S",
-          "TPM"
+          "Lean Six Sigma (Green Belt)"
         ],
         "color": "from-green-500 to-green-600"
       }
