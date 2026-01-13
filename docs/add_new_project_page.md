@@ -1,6 +1,6 @@
 # Adding New Case Study Pages - Step-by-Step Guide
 
-This guide provides detailed instructions for adding new case study pages to the portfolio website.
+This guide provides detailed instructions for adding new case study pages to the portfolio website using the data-driven template system.
 
 ---
 
@@ -14,20 +14,16 @@ Before adding a new case study, ensure you have:
 
 ---
 
-## Option A: After Full Refactor (Recommended)
+## Step 1: Prepare Project Assets
 
-If the project has been refactored with reusable components and data-driven approach:
-
-### Step 1: Prepare Project Assets
-
-#### 1.1 Create Project Folder
+### 1.1 Create Project Folder
 ```bash
 cd public/projects
 mkdir "Your Project Name"
 mkdir "Your Project Name/figures"
 ```
 
-#### 1.2 Add Images
+### 1.2 Add Images
 Required images:
 - **Card image**: `your-project-name.png` (goes in `/public/projects/`)
 - **Visual evidence**: 4 images showing project outputs (goes in `/public/projects/Your Project Name/figures/`)
@@ -51,15 +47,15 @@ cp ~/path/to/image4.png "public/projects/Your Project Name/figures/analysis-4.pn
 
 ---
 
-### Step 2: Create Case Study Data File
+## Step 2: Create Case Study Data File
 
-#### 2.1 Copy Template
+### 2.1 Copy Template
 ```bash
 cd src/data/caseStudies
 cp spare-parts-anomaly.json your-project-slug.json
 ```
 
-#### 2.2 Edit JSON File
+### 2.2 Edit JSON File
 Open `your-project-slug.json` and update all fields:
 
 ```json
@@ -100,8 +96,8 @@ Open `your-project-slug.json` and update all fields:
     ],
     
     "keyResults": [
-      "Achieved XX% improvement in metric",
-      "Reduced YY by ZZ units/dollars/percent",
+      "Achieved **XX%** improvement in metric",
+      "Reduced YY by **ZZ** units/dollars/percent",
       "Enabled new capability or process"
     ],
     
@@ -158,7 +154,7 @@ Open `your-project-slug.json` and update all fields:
   "links": {
     "demo": "https://your-demo-url.com",     // or null if no demo
     "github": "https://github.com/...",      // or null if no repo
-    "notion": null,                           // deprecated, use null
+    "notion": null,                           // deprecated, always null
     "linkedin": "https://linkedin.com/in/sjrolando"
   }
 }
@@ -174,18 +170,18 @@ Open `your-project-slug.json` and update all fields:
 
 ---
 
-### Step 3: Create Page Component
+## Step 3: Create Page Component
 
-#### 3.1 Create Component File
+### 3.1 Create Component File
 ```bash
 cd src/pages/case-studies
 touch YourProjectPage.tsx
 ```
 
-#### 3.2 Add Component Code
+### 3.2 Add Component Code
 ```tsx
 import CaseStudyTemplate from './CaseStudyTemplate';
-import data from '@/data/caseStudies/your-project-slug.json';
+import data from '../../data/caseStudies/your-project-slug.json';
 
 export default function YourProjectPage() {
   return <CaseStudyTemplate data={data} />;
@@ -196,26 +192,32 @@ That's it! The template handles all the sections automatically.
 
 ---
 
-### Step 4: Register Route
+## Step 4: Add Route to App.tsx
 
-#### 4.1 Update Router Configuration
-Open `src/pages/case-studies/CaseStudyRouter.tsx` and add your project:
+### 4.1 Update App.tsx
+Open `src/App.tsx` and add your new route:
 
 ```tsx
-import YourProjectPage from './YourProjectPage';
+import YourProjectPage from './pages/case-studies/YourProjectPage';
 
-const caseStudyMap = {
-  'spare-parts-anomaly-detection': SparePartsAnomalyPage,
-  'your-project-slug': YourProjectPage,  // Add this line
-  // ...
-};
+// Inside <Routes>:
+<Route path="/projects/your-project-slug" element={<Layout><YourProjectPage /></Layout>} />
+```
+
+**Example:**
+```tsx
+<Routes>
+  <Route path="/" element={<Layout><HomePage /></Layout>} />
+  <Route path="/projects/spare-parts-anomaly-detection" element={<Layout><SparePartsAnomalyPage /></Layout>} />
+  <Route path="/projects/your-project-slug" element={<Layout><YourProjectPage /></Layout>} />
+</Routes>
 ```
 
 ---
 
-### Step 5: Update Project Card Data
+## Step 5: Update Project Card Data
 
-#### 5.1 Edit userData.json
+### 5.1 Edit userData.json
 Open `src/data/userData.json` and add your project to the `projects` array:
 
 ```json
@@ -229,14 +231,14 @@ Open `src/data/userData.json` and add your project to the `projects` array:
     "Pandas",
     "Technology3"
   ],
-  "category": "Machine Learning",  // or "Anomaly Detection", "Supply Chain Analytics", etc.
+  "category": "Machine Learning",
   "results": [
     "Key result 1 for card display",
     "Key result 2 for card display"
   ],
   "github": "https://github.com/...",  // optional
   "demo": "https://...",               // optional
-  "notion": null                        // will be replaced by internal link
+  "notion": null
 }
 ```
 
@@ -250,80 +252,81 @@ Open `src/data/userData.json` and add your project to the `projects` array:
 
 ---
 
-### Step 6: Update Projects Component
+## Step 6: Update Projects Component Routing
 
-#### 6.1 Add routing logic
+### 6.1 Add routing logic
 Open `src/components/sections/Projects.tsx`:
 
 Find the section where project id 3 has special routing logic and add yours:
 
 ```tsx
 {project.id === 3 && (
-  <Link to="/projects/spare-parts-anomaly-detection" ...>
+  <Link
+    to="/projects/spare-parts-anomaly-detection"
+    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg font-semibold transition-all duration-200"
+  >
+    <ExternalLink className="h-4 w-4" />
     Case Study
   </Link>
 )}
 {project.id === 8 && (  // Add this for your new project
-  <Link to="/projects/your-project-slug" ...>
+  <Link
+    to="/projects/your-project-slug"
+    className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg font-semibold transition-all duration-200"
+  >
+    <ExternalLink className="h-4 w-4" />
     Case Study
   </Link>
 )}
 ```
 
-**OR if using generic logic**, update to:
-
-```tsx
-{[3, 8].includes(project.id) && (  // Add your project ID
-  <Link to={`/projects/${getProjectSlug(project.id)}`} ...>
-    Case Study
-  </Link>
-)}
-```
+> **Note:** Make sure to use the **outline button style** (border-2, transparent background) for case study links to match the design.
 
 ---
 
-### Step 7: Test Your Case Study
+## Step 7: Test Your Case Study
 
-#### 7.1 Start Dev Server
+### 7.1 Start Dev Server
 ```bash
 npm run dev
 ```
 
-#### 7.2 Verify Navigation
-1. Open http://localhost:5173/rolando-portfolio-page/
+### 7.2 Verify Navigation
+1. Open http://localhost:5173/rolando-portfolio-page/ (or the port shown)
 2. Scroll to Projects section
 3. Find your new project card
 4. Click "Case Study" button
 5. Verify:
    - ✅ Page loads without errors
    - ✅ All sections display correctly
-   - ✅ All 3 key impact cards show
+   - ✅ All 3 key impact cards show with icons
    - ✅ All 4 images load
    - ✅ Technologies display as pills
    - ✅ Links work (demo, GitHub, LinkedIn)
    - ✅ "Back to Portfolio" returns home
    - ✅ Header links work from case study page
 
-#### 7.3 Test Theme Toggle
-1. On case study page, click theme toggle
+### 7.3 Test Theme Toggle
+1. On case study page, click theme toggle (moon/sun icon)
 2. Verify both light and dark themes render correctly
 3. Check text contrast and readability
 
-#### 7.4 Test Browser Navigation
+### 7.4 Test Browser Navigation
 1. Use browser back button from case study
 2. Click case study again
 3. Verify images still load (no broken paths)
 
 ---
 
-### Step 8: Commit Changes
+## Step 8: Deploy
 
+### 8.1 Commit Changes
 ```bash
 git add public/projects/your-project-name.png
 git add "public/projects/Your Project Name/"
 git add src/data/caseStudies/your-project-slug.json
 git add src/pages/case-studies/YourProjectPage.tsx
-git add src/pages/case-studies/CaseStudyRouter.tsx
+git add src/App.tsx
 git add src/data/userData.json
 git add src/components/sections/Projects.tsx
 
@@ -331,162 +334,28 @@ git commit -m "feat: add case study page for Your Project Name"
 git push
 ```
 
----
-
-## Option B: Before Refactor (Current Structure)
-
-If you need to add a case study before the refactor is complete:
-
-### Step 1: Prepare Assets (Same as Option A)
-Follow Step 1 from Option A to add images.
-
----
-
-### Step 2: Create Case Study Component
-
-#### 2.1 Copy Existing Component
+### 8.2 Deploy to GitHub Pages
 ```bash
-cd src/components
-cp SparePartsAnomalyCaseStudy.tsx YourProjectCaseStudy.tsx
+npm run deploy
 ```
 
-#### 2.2 Edit Component File
-
-Open `YourProjectCaseStudy.tsx` and update:
-
-**Line 6-28: Update keyImpactMetrics**
-```tsx
-const keyImpactMetrics = [
-  {
-    icon: TrendingUp,  // Change icon
-    value: '+25%',     // Your metric
-    label: 'Efficiency Gain',
-    description: 'Your description'
-  },
-  // ... update all 3 metrics
-];
-```
-
-**Line 30-37: Update technologies**
-```tsx
-const technologies = [
-  'Python',
-  'YourTech1',
-  'YourTech2',
-  // ...
-];
-```
-
-**Line 39-65: Update methods**
-```tsx
-const methods = [
-  {
-    name: 'Your Method',
-    description: 'What it does'
-  },
-  // ...
-];
-```
-
-**Line 67-81: Update visualEvidence**
-```tsx
-const visualEvidence = [
-  {
-    image: '/rolando-portfolio-page/projects/Your Project Name/figures/image1.png',
-    caption: 'Your caption'
-  },
-  // ... 4 total images
-];
-```
-
-**Line 104-106: Update hero section**
-```tsx
-<h1>Your Project Title</h1>
-<p>Your subtitle</p>
-```
-
-**Line 154-156: Update overview**
-```tsx
-<p>Your project overview (3-4 sentences)</p>
-```
-
-**Line 163-181: Update all content sections**
-- Business Value (lines 163-175)
-- Key Results (lines 183-199)
-- Key Benefits (lines 207-219)
-- Stakeholders (lines 227-231)
-- Methods & Algorithms (already in data)
-- Visual Evidence (already in data)
-
-**Line 338-350: Update access links**
-```tsx
-<a href="your-demo-url">Demo App</a>
-<a href="your-github-url">GitHub</a>
-```
+This will build and deploy to GitHub Pages automatically.
 
 ---
 
-### Step 3: Update App.tsx Routing
-
-Open `src/App.tsx` and add a new route:
-
-```tsx
-<Route path="/projects/your-project-slug" element={
-  <>
-    <Header />
-    <YourProjectCaseStudy />
-    <Footer />
-  </>
-} />
-```
-
-**Important:** Add the import at the top:
-```tsx
-import YourProjectCaseStudy from './components/YourProjectCaseStudy';
-```
-
----
-
-### Step 4: Update userData.json
-(Same as Step 5 from Option A)
-
-Add your project to the `projects` array in `src/data/userData.json`.
-
----
-
-### Step 5: Update Projects.tsx
-(Same as Step 6 from Option A)
-
-Add routing logic for your project ID.
-
----
-
-### Step 6: Test & Commit
-(Same as Steps 7-8 from Option A)
-
----
-
-## Quick Reference: File Checklist
-
-Use this checklist when adding a new case study:
+## Quick Reference Checklist
 
 ### Assets
 - [ ] Card image in `/public/projects/your-project-name.png`
 - [ ] Project folder created: `/public/projects/Your Project Name/`
 - [ ] 4 visual evidence images in `/public/projects/Your Project Name/figures/`
 
-### Code Files (Option A - After Refactor)
+### Code Files
 - [ ] Case study data: `/src/data/caseStudies/your-project-slug.json`
 - [ ] Page component: `/src/pages/case-studies/YourProjectPage.tsx`
-- [ ] Router updated: `/src/pages/case-studies/CaseStudyRouter.tsx`
+- [ ] Route added in: `/src/App.tsx`
 - [ ] Project card data: `/src/data/userData.json` (projects array)
 - [ ] Link routing: `/src/components/sections/Projects.tsx`
-
-### Code Files (Option B - Before Refactor)
-- [ ] Component: `/src/components/YourProjectCaseStudy.tsx`
-- [ ] Route: `/src/App.tsx`
-- [ ] Project card data: `/src/data/userData.json`
-- [ ] Link routing: `/src/components/Projects.tsx`
 
 ### Testing
 - [ ] Dev server runs without errors
@@ -511,22 +380,30 @@ Use this checklist when adding a new case study:
 ```
 
 ### Issue: Case Study button not appearing
-**Solution:** Ensure project ID is added to routing logic in Projects.tsx
+**Solution:** Ensure project ID is added to routing logic in Projects.tsx (Step 6)
 
-### Issue: Route not found
+### Issue: Route not found (404)
 **Solution:** 
-1. Check slug matches exactly in route and link
-2. Verify import path is correct in App.tsx or CaseStudyRouter.tsx
-3. Clear browser cache and refresh
+1. Check slug matches exactly in App.tsx route and Projects.tsx link
+2. Verify import path is correct in App.tsx
+3. Restart dev server (`npm run dev`)
+4. Clear browser cache and hard reload (Ctrl+Shift+R)
 
-### Issue: Icons not rendering in Key Impact cards
-**Solution:** Verify icon name is imported from lucide-react:
+### Issue: Import error for JSON file
+**Solution:** TypeScript may need the import path without `@/`:
 ```tsx
-import { TrendingUp, DollarSign, Factory } from 'lucide-react';
+import data from '../../data/caseStudies/your-project-slug.json';
 ```
 
+### Issue: Icons not rendering in Key Impact cards
+**Solution:** Check icon name matches exactly (case-sensitive):
+- Available: `TrendingUp`, `TrendingDown`, `DollarSign`, `Factory`, `Database`, `Server`, `Activity`, `Shield`, `Brain`
+
 ### Issue: Styling looks different
-**Solution:** Ensure you're using the same Tailwind classes as the template
+**Solution:** 
+1. Ensure you copied the exact button className from the example
+2. The template automatically handles section styling
+3. Check that dark mode classes are present (`dark:...`)
 
 ---
 
@@ -540,7 +417,7 @@ import { TrendingUp, DollarSign, Factory } from 'lucide-react';
 - Start with "This project..."
 - 3-4 sentences, no more
 - Business context, not technical details
-- Focus on problem → solution → impact
+- Focus on: problem → solution → impact
 
 ### Business Value
 - Write for HR/managers, not technical leads
@@ -550,49 +427,88 @@ import { TrendingUp, DollarSign, Factory } from 'lucide-react';
 ### Key Results
 - Must be quantifiable
 - Include numbers: percentages, dollars, units
-- Use bold for the metric: `**USD 58K**`
+- Use `**bold**` for metrics: `**USD 58K**`, `**-0.5%**`
 
 ### Methods
-- Technical audience can skim this
 - One line per method
 - Format: "Method Name – what it does"
+- Technical audience can read this, but keep it brief
 
 ### Visual Evidence Captions
 - ✅ "Consumption Peaks – Dispatch vs Trend Analysis"
 - ❌ "newplot2-edit.png"
+- Be descriptive but concise
 
 ---
 
 ## Time Estimate
 
-**Option A (After Refactor):** ~15-30 minutes per case study
-- 5 min: Prepare images
-- 5 min: Create/edit JSON file
-- 3 min: Create page component
-- 2 min: Update routing
+**Per case study: ~15-30 minutes**
+
+- 5 min: Prepare and copy images
+- 5-10 min: Create/edit JSON file
+- 2 min: Create page component (6 lines)
+- 2 min: Update App.tsx routing
 - 5 min: Update userData.json
+- 2 min: Update Projects.tsx routing
 - 5-10 min: Testing
 
-**Option B (Before Refactor):** ~1-2 hours per case study
-- 10 min: Prepare images
-- 30-60 min: Copy and customize component
-- 5 min: Update routing
-- 5 min: Update userData.json
-- 10-20 min: Testing and fixing issues
+---
+
+## Example: Complete Workflow
+
+Here's a real example adding "LSTM Energy Demand Prediction":
+
+```bash
+# 1. Create folders
+mkdir "public/projects/LSTM Energy Demand Prediction"
+mkdir "public/projects/LSTM Energy Demand Prediction/figures"
+
+# 2. Copy images (assuming you have them ready)
+cp ~/Downloads/lstm-card.png public/projects/lstm-energy.png
+cp ~/Downloads/lstm-*.png "public/projects/LSTM Energy Demand Prediction/figures/"
+
+# 3. Create JSON
+cd src/data/caseStudies
+cp spare-parts-anomaly.json lstm-energy.json
+# Edit lstm-energy.json with your content
+
+# 4. Create page component
+cat > src/pages/case-studies/LSTMEnergyPage.tsx << 'EOF'
+import CaseStudyTemplate from './CaseStudyTemplate';
+import data from '../../data/caseStudies/lstm-energy.json';
+
+export default function LSTMEnergyPage() {
+  return <CaseStudyTemplate data={data} />;
+}
+EOF
+
+# 5. Test
+npm run dev
+# Open browser and verify
+
+# 6. Deploy
+git add .
+git commit -m "feat: add LSTM Energy Demand Prediction case study"
+git push
+npm run deploy
+```
 
 ---
 
 ## Need Help?
 
 If you encounter issues:
-1. Check browser console for error messages
-2. Verify all file paths are absolute
-3. Ensure all imports are correct
-4. Compare your code with the Spare Parts case study
-5. Check that all JSON is valid (no trailing commas!)
-6. Clear browser cache and hard reload (Ctrl+Shift+R)
+1. Check browser console for error messages (F12)
+2. Verify all file paths are absolute with `/rolando-portfolio-page/` prefix
+3. Ensure all imports are correct (relative paths `../../`)
+4. Compare your files with the Spare Parts case study example
+5. Check that JSON is valid (use JSONLint.com, watch for trailing commas)
+6. Restart dev server if changes aren't showing
+7. Clear browser cache and hard reload (Ctrl+Shift+R)
 
 ---
 
 **Last Updated:** 2026-01-13  
+**Project Structure:** Refactored (data-driven template system)  
 **For questions or improvements to this guide, contact:** sj.rolando@gmail.com
