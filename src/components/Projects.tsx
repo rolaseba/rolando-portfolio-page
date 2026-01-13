@@ -1,4 +1,5 @@
 import { ExternalLink, Github, BarChart3, Brain, Shield, Activity, Database, Server } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useUserData } from '../hooks/useUserData';
 
 const Projects = () => {
@@ -105,19 +106,25 @@ const Projects = () => {
                           Live Demo
                         </a>
                       )}
-                      {project.notion && (
+                      {project.notion && project.id !== 3 && (
                         <a
                           href={project.notion}
-                          className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 ${project.id === 3
-                              ? 'bg-transparent border-2 border-slate-900 dark:border-blue-600 text-slate-900 dark:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800'
-                              : 'bg-slate-900 dark:bg-blue-600 text-white hover:bg-slate-800 dark:hover:bg-blue-700'
-                            }`}
+                          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-blue-600 text-white py-2.5 rounded-md text-sm font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <ExternalLink className="h-4 w-4" />
                           Case Study
                         </a>
+                      )}
+                      {project.id === 3 && (
+                        <Link
+                          to="/projects/spare-parts-anomaly-detection"
+                          className="flex-1 flex items-center justify-center gap-2 bg-transparent border-2 border-slate-900 dark:border-blue-600 text-slate-900 dark:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 py-2.5 rounded-md text-sm font-semibold transition-all duration-200"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          Case Study
+                        </Link>
                       )}
                       {project.github && (
                         <a
