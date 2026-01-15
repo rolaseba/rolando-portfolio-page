@@ -1,13 +1,17 @@
-# Portfolio Website
+# Sebastián Rolando - Portfolio Website
 
-Professional data science portfolio website showcasing operational analytics, machine learning, and supply chain optimization projects.
+Sebastián Rolando's professional data science portfolio website showcasing operational analytics, machine learning, and supply chain optimization projects.
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)
+![Deployed](https://img.shields.io/badge/Deployed-View_Online-success?logo=github&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin&logoColor=white)
 
 ## Overview
+
+**Live Site**: [https://rolaseba.github.io/rolando-portfolio-page/](https://rolaseba.github.io/rolando-portfolio-page/)
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features 6 data science projects across operations analytics, supply chain, and machine learning domains.
 
@@ -18,6 +22,14 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **Build Tool**: Vite
 - **Icons**: Lucide React
 - **Deployment**: GitHub Pages
+
+## Live Site
+
+The portfolio is deployed and available online: [https://rolaseba.github.io/rolando-portfolio-page/](https://rolaseba.github.io/rolando-portfolio-page/)
+
+## Contact
+
+- **LinkedIn**: [https://www.linkedin.com/in/sjrolando](https://www.linkedin.com/in/sjrolando)
 
 ## Features
 
