@@ -1,0 +1,98 @@
+{
+    "id": 1,
+    "slug": "lstm-energy-demand",
+    "title": "LSTM Energy Demand Prediction",
+    "subtitle": "Hourly electricity demand forecasting using Deep Learning for national grid stability",
+    "keyImpact": [
+        {
+            "value": "3.95%",
+            "label": "MAPE",
+            "description": "Excellent forecasting accuracy (below 5% target)",
+            "icon": "Target"
+        },
+        {
+            "value": "168 Hours",
+            "label": "Sequence",
+            "description": "Weekly patterns captured for prediction",
+            "icon": "Clock"
+        },
+        {
+            "value": "24h Ahead",
+            "label": "Forecasting",
+            "description": "Proactive operational decision-making",
+            "icon": "TrendingUp"
+        }
+    ],
+    "sections": {
+        "overview": "Developed an LSTM-based deep learning model to forecast hourly electricity demand for Bangladesh's Power Grid Company (PGCB), managing ~25,700 MW of installed capacity. The solution enables proactive grid management, resource optimization, and cost reduction by predicting demand patterns with high accuracy using 168-hour sequence inputs.",
+        "businessValue": [
+            "Grid Stability: Prevents blackouts and overload conditions through accurate demand foresight",
+            "Resource Allocation: Optimizes generation across coal, gas, hydro, and renewable sources",
+            "Cost Optimization: Matches supply with demand to minimize wasteful generation and fuel waste",
+            "Data-Driven Planning: Replaces rule-based scheduling with predictive intelligence"
+        ],
+        "keyResults": [
+            "Achieved **3.95% MAPE** and **320.21 MW MAE** in hourly demand forecasting",
+            "Successfully captured diurnal and weekly cycles using **Long Short-Term Memory** networks",
+            "Implemented a **multi-step ahead (24-hour)** forecasting horizon",
+            "Developed a production-ready model with over **129,000 optimized parameters**"
+        ],
+        "benefits": [
+            "Proactive deployment of generation capacity before demand peaks",
+            "Early warning system for potential supply-demand imbalances",
+            "Scalable architecture for regional or national grid forecasting",
+            "Exportable model architecture ready for enterprise production deployment"
+        ],
+        "stakeholders": [
+            "Grid Operators",
+            "Energy Resource Managers",
+            "Operations & Planning",
+            "Infrastructure Strategists"
+        ],
+        "technologies": [
+            "Python",
+            "TensorFlow/Keras",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Streamlit"
+        ],
+        "methods": [
+            {
+                "name": "LSTM Neural Networks",
+                "description": "Triple-layered architecture with Batch Normalization and Dropout for robust sequence mapping"
+            },
+            {
+                "name": "Sequence Modeling",
+                "description": "Capturing long-range temporal dependencies using 7-day historical windows"
+            },
+            {
+                "name": "Temporal Validation",
+                "description": "Train-test splitting that respects chronological order to prevent data leakage"
+            },
+            {
+                "name": "Optimization Suite",
+                "description": "Gradient Clipping, L2 Regularization, and Early Stopping for model generalization"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/forecast.png",
+                "caption": "Full Context Forecast - Model Predictions vs. Actual Grid Demand"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/forecast-zoomed.png",
+                "caption": "Detailed Diurnal Cycle Capture - Tracking Peak and Off-Peak Performance"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/screenshot.png",
+                "caption": "Streamlit App (proof of concept aplication -> in Live Demo)"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://energy-demand-forecasting-lstm.streamlit.app",
+        "github": "https://github.com/rolaseba/energy-demand-forecasting-lstm",
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

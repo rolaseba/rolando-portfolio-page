@@ -1,0 +1,99 @@
+{
+    "id": 4,
+    "slug": "material-cost-performance",
+    "title": "Material Cost Behavior & Supplier Performance Analysis",
+    "subtitle": "Cost analytics framework identifying pricing risks and supplier deviations to drive savings",
+    "keyImpact": [
+        {
+            "value": "USD 200K",
+            "label": "Potential Savings",
+            "description": "Identified annual cost optimization",
+            "icon": "DollarSign"
+        },
+        {
+            "value": "Real-time",
+            "label": "Alert System",
+            "description": "Strategic overspend prevention",
+            "icon": "Activity"
+        },
+        {
+            "value": "Multi-year",
+            "label": "Analysis Scope",
+            "description": "Unified purchasing history",
+            "icon": "Database"
+        }
+    ],
+    "sections": {
+        "overview": "This project delivers a specialized cost analytics framework designed to identify pricing risks, detect supplier deviations, and highlight opportunities for savings in warehouse material purchases. It combines multi-year purchasing history with advanced data preparation to create custom performance indicators for cost stability and price change detection. The framework features a real-time overspend alert tool that flags excessive price increases during purchase order creation, empowering procurement teams to take immediate action.",
+        "businessValue": [
+            "Direct Savings: Identify overpricing and quantify impact for renegotiations",
+            "Risk Control: Flag unstable materials and prioritize high-spend items",
+            "Strategic Planning: Anticipate price trends to adjust contracts accordingly"
+        ],
+        "keyResults": [
+            "Identified **~USD 150-200K** in potential annual savings",
+            "Developed **specialized indicators** for stability vs. volatility",
+            "Built a **visual prioritization tool** using average yearly cost",
+            "Enabled **immediate action** on price increases before approval"
+        ],
+        "benefits": [
+            "Objective evidence for supplier accountability",
+            "Early detection of risky upward trends",
+            "Decision clarity for high-spend and high-volatility items",
+            "Automated overspend prevention during the procurement process"
+        ],
+        "stakeholders": [
+            "Procurement",
+            "Finance",
+            "Warehouse Operations",
+            "Supply Chain Planning"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Plotly"
+        ],
+        "methods": [
+            {
+                "name": "Cost Stability Indicators",
+                "description": "Measuring price consistency vs volatility"
+            },
+            {
+                "name": "Percent Change Analysis",
+                "description": "Detecting deviations between consecutive purchases"
+            },
+            {
+                "name": "Trend Prioritization",
+                "description": "Long-term trend vs historical average comparison"
+            },
+            {
+                "name": "Automated Flagging",
+                "description": "Real-time alerts for strategic overspend detection"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/overspend_alert2_alt.png",
+                "caption": "Strategic Overspend Alert Tool"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/cv_and_trend_alterated.png",
+                "caption": "Cost Variability vs Trend Prioritization"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_2_case_alt.png",
+                "caption": "Industrial Oil Supplier - Price Fluctuation Analysis"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_1_case_alt.png",
+                "caption": "Specialty Lubricant Supplier - Price Deviation Detection"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

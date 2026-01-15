@@ -1,0 +1,89 @@
+{
+    "id": 6,
+    "slug": "malt-production-optimization",
+    "title": "Malt Production Performance Optimization",
+    "subtitle": "Leveraging 13 years of historical data for production yield and quality optimization",
+    "keyImpact": [
+        {
+            "value": "13 Years",
+            "label": "Data Depth",
+            "description": "Historical production analysis",
+            "icon": "Database"
+        },
+        {
+            "value": "52+",
+            "label": "Variables",
+            "description": "Evaluated process parameters",
+            "icon": "Activity"
+        },
+        {
+            "value": "Applied",
+            "label": "Advanced Stats",
+            "description": "Pearson, Cramér’s V, ANOVA/Tukey",
+            "icon": "Brain"
+        }
+    ],
+    "sections": {
+        "overview": "This project presents a Proof of Concept (PoC) for optimizing malt production by analyzing 13 years of historical data from a 350 TN/year plant. By focusing on physicochemical, process, and quality parameters, the study applied advanced statistical methods and feature selection to identify the variables with the greatest influence on production yield and costs. The framework bridges the technical process control gap with commercial decision-making.",
+        "businessValue": [
+            "Operationally: Pinpoints parameters influencing yield and quality to guide process optimization",
+            "Commercially: Quantifies cost impact of client-requested parameter adjustments for fair pricing",
+            "Strategic Integration: Connects technical process control with customer-facing teams"
+        ],
+        "keyResults": [
+            "Processed **13 years** of data with over **52 variables** evaluated",
+            "Built statistically significant correlation matrices for **critical parameters** (Efdm, PT, Fil T, etc.)",
+            "Identified directional recommendations (↑/↓) for performance improvement",
+            "Quantified potential improvements in **yield and energy efficiency**"
+        ],
+        "benefits": [
+            "Targeted actions to reduce energy use and material waste",
+            "Evidence-based cost quantification for contract pricing support",
+            "Early detection of deviations from optimal quality parameter ranges",
+            "Research support for adapting recipes to different barley harvests"
+        ],
+        "stakeholders": [
+            "Production & Operations",
+            "Quality Assurance",
+            "R&D",
+            "Commercial & Customer Relations"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "SciPy"
+        ],
+        "methods": [
+            {
+                "name": "Correlation Analysis",
+                "description": "Pearson and Cramér’s V for identifying parameter relationships"
+            },
+            {
+                "name": "Statistical Significance",
+                "description": "ANOVA and Tukey HSD for variance and hypothesis testing"
+            },
+            {
+                "name": "Feature Selection",
+                "description": "Filtering variables based on significance thresholds"
+            },
+            {
+                "name": "Inter-parameter Mapping",
+                "description": "Visualizing complex relationships between process variables"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Malt Production Performance Optimization/figures/inter-parameter_correlation_alterated.png",
+                "caption": "Inter-Parameter Correlation Matrix - Identifying Impactful Variables"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

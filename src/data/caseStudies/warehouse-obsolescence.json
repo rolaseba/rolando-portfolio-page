@@ -1,0 +1,101 @@
+{
+    "id": 5,
+    "slug": "warehouse-strategy-obsolescence",
+    "title": "Warehouse Strategy & Obsolescence Reduction Project",
+    "subtitle": "Optimizing inventory dynamics and reducing immobilized capital through data-driven metrics",
+    "keyImpact": [
+        {
+            "value": "47 Metrics",
+            "label": "Custom Indicators",
+            "description": "Design and implementation of operational metrics",
+            "icon": "Activity"
+        },
+        {
+            "value": "40-50%",
+            "label": "Obsolescence Rate",
+            "description": "Identified potential obsolete/immobilized items",
+            "icon": "TrendingUp"
+        },
+        {
+            "value": "USD 500K+",
+            "label": "Capital at Risk",
+            "description": "Quantified risk from inactive materials",
+            "icon": "DollarSign"
+        }
+    ],
+    "sections": {
+        "overview": "This project addressed the challenge of analyzing inventory dynamics and rotation within a complex warehouse environment using data from multiple non-integrated management systems. By consolidating and harmonizing fragmented datasets, I implemented a comprehensive framework of 47 custom metrics (19 movement-related and 28 cost-related). This solution enables systematic identification of obsolescence, realigns replenishment strategies (ROP, EOQ), and optimizes budget allocation towards actual material usage.",
+        "businessValue": [
+            "Integrated view of fragmented systems: Unified decision-making framework from raw data",
+            "Obsolescence Detection: Systematic identification of items for removal to free physical space",
+            "Budget Optimization: Shifted financial resources toward real material usage, avoiding immobilization"
+        ],
+        "keyResults": [
+            "Identified **40-50%** of catalog as potentially obsolete or immobilized",
+            "Quantified **several hundred KUSD** in value for materials inactive for 1-3 years",
+            "Detected hundreds of items with **zero movement since creation**",
+            "Re-calibrated replenishment parameters (**ROP, EOQ**) based on actual behavior"
+        ],
+        "benefits": [
+            "Physical space liberation through removal of obsolete items",
+            "Reduction in indirect storage and maintenance expenses",
+            "Early detection of obsolescence trends to mitigate future risk",
+            "Improved process efficiency by aligning replenishment with actual demand"
+        ],
+        "stakeholders": [
+            "Warehouse Operations",
+            "Maintenance Teams",
+            "Procurement",
+            "Finance"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Plotly"
+        ],
+        "methods": [
+            {
+                "name": "Inventory Movement Metrics",
+                "description": "Days since last movement, movement categories, and receipt-to-issue ratios"
+            },
+            {
+                "name": "Purchase Cost Metrics",
+                "description": "Immobilized value and purchase-to-consumption alignment"
+            },
+            {
+                "name": "Data Harmonization",
+                "description": "Integration and cleaning of multiple non-integrated management systems"
+            },
+            {
+                "name": "Operational Decision Logic",
+                "description": "Dynamic adaptation of replenishment and obsolescence thresholds"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/last_time_moved_alt.png",
+                "caption": "Years Since Last Movement - Visualizing Inventory Stagnation"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/receipt_to_issue_ratio_alt.png",
+                "caption": "Receipt-to-Issue Ratio Distribution - Identifying Overstocking Patterns"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/last_time_moved_and_issue.png",
+                "caption": "Inactivity Analysis across Material Categories"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/coef_of_variation_distribution.png",
+                "caption": "Demand Volatility Analysis for Inventory Optimization"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}
