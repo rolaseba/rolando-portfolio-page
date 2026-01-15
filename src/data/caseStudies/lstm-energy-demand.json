@@ -7,24 +7,28 @@
         {
             "value": "3.95%",
             "label": "MAPE",
-            "description": "Excellent forecasting accuracy (below 5% target)",
+            "description": "Mean Absolute Percentage Error on test set data",
             "icon": "Target"
         },
         {
             "value": "168 Hours",
-            "label": "Sequence",
-            "description": "Weekly patterns captured for prediction",
-            "icon": "Clock"
+            "label": "Input Window",
+            "description": "Using 7 days of historical energy consumption sequences",
+            "icon": "Activity"
         },
         {
             "value": "24h Ahead",
             "label": "Forecasting",
-            "description": "Proactive operational decision-making",
+            "description": "Multi-step prediction for the next day's consumption",
             "icon": "TrendingUp"
         }
     ],
+    "proofOfConcept": {
+        "title": "Portfolio Proof of Concept",
+        "body": "This is a self-initiated professional Data Science project built using real-world public data to demonstrate end-to-end forecasting, deep learning modeling, and business-oriented decision support for national energy systems."
+    },
     "sections": {
-        "overview": "Developed an LSTM-based deep learning model to forecast hourly electricity demand for Bangladesh's Power Grid Company (PGCB), managing ~25,700 MW of installed capacity. The solution enables proactive grid management, resource optimization, and cost reduction by predicting demand patterns with high accuracy using 168-hour sequence inputs.",
+        "overview": "Developed an LSTM-based deep learning model to forecast hourly electricity demand using public data representative of Bangladesh’s national power grid operations (PGCB context), managing ~25,700 MW of installed capacity. The solution enables proactive grid management, resource optimization, and cost reduction by predicting demand patterns with high accuracy using 168-hour sequence inputs.",
         "businessValue": [
             "Grid Stability: Prevents blackouts and overload conditions through accurate demand foresight",
             "Resource Allocation: Optimizes generation across coal, gas, hydro, and renewable sources",

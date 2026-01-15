@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ExternalLink, ArrowLeft, TrendingDown, DollarSign, Factory, TrendingUp, Database, Server, Activity, Shield, Brain } from 'lucide-react';
+import { ExternalLink, ArrowLeft, TrendingDown, DollarSign, Factory, TrendingUp, Database, Server, Activity, Shield, Brain, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CaseStudyHero from '../../components/case-study/CaseStudyHero';
 import KeyImpactCards, { type KeyImpactMetric } from '../../components/case-study/KeyImpactCards';
@@ -35,6 +35,10 @@ interface CaseStudyData {
         description: string;
         icon: string;
     }>;
+    proofOfConcept?: {
+        title: string;
+        body: string;
+    };
     sections: {
         overview: string;
         businessValue: string[];
@@ -84,6 +88,25 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
             {/* Hero Section */}
             <CaseStudyHero title={data.title} subtitle={data.subtitle} />
+
+            {/* Portfolio Proof of Concept Banner */}
+            {data.proofOfConcept && (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+                    <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/50 rounded-xl p-6 flex gap-4 items-start">
+                        <div className="bg-blue-100 dark:bg-blue-800 p-2 rounded-lg">
+                            <Info className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
+                                {data.proofOfConcept.title}
+                            </h3>
+                            <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
+                                {data.proofOfConcept.body}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Key Impact Section */}
             <KeyImpactCards metrics={keyImpactMetrics} />

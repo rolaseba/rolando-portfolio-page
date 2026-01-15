@@ -23,6 +23,10 @@
             "icon": "TrendingUp"
         }
     ],
+    "proofOfConcept": {
+        "title": "Portfolio Proof of Concept",
+        "body": "This is a self-initiated professional Data Science portfolio project built using a well-known real-world hotel reservation dataset to demonstrate ensemble machine learning, cancellation risk modeling, and revenue-focused decision support for hospitality operations."
+    },
     "sections": {
         "overview": "Developed an ensemble machine learning model to predict booking cancellations using historical hotel reservation data from two Portuguese hotels. The solution enables revenue protection through proactive risk assessment, dynamic overbooking, and targeted guest segmentation, directly addressing an estimated $670K in annual revenue loss.",
         "businessValue": [
