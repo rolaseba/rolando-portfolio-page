@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import SparePartsAnomalyPage from './pages/case-studies/SparePartsAnomalyPage';
@@ -10,7 +10,7 @@ import HotelCancellationPage from './pages/case-studies/HotelCancellationPage';
 
 function App() {
   return (
-    <Router basename="/rolando-portfolio-page">
+    <Router>
       <Routes>
         {/* Home Page */}
         <Route path="/" element={<Layout><HomePage /></Layout>} />
