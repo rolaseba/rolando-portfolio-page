@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
+      // Redirect to home page with path as query parameter
       var pathSegmentsToKeep = 1;
       var l = window.location;
+      var path = l.pathname.split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~');
+      var search = l.search ? l.search.slice(1).replace(/&/g, '~and~') : '';
+      
+      sessionStorage.redirect = path + (search ? '?q=' + search : '');
+      
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/'
       );
     </script>
   </head>
