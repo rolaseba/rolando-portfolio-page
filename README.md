@@ -11,7 +11,7 @@ Sebastián Rolando's professional data science portfolio website showcasing oper
 
 ## Overview
 
-**Live Site**: [https://rolaseba.github.io/rolando-portfolio-page/](https://rolaseba.github.io/rolando-portfolio-page/)
+**Live Site**: [https://rolaseba.github.io/rolando-portfolio-page/#/](https://rolaseba.github.io/rolando-portfolio-page/#/)
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features 6 data science projects across operations analytics, supply chain, and machine learning domains.
 
@@ -25,7 +25,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## Live Site
 
-The portfolio is deployed and available online: [https://rolaseba.github.io/rolando-portfolio-page/](https://rolaseba.github.io/rolando-portfolio-page/)
+The portfolio is deployed and available online: [https://rolaseba.github.io/rolando-portfolio-page/#/](https://rolaseba.github.io/rolando-portfolio-page/#/)
 
 ## Contact
 
