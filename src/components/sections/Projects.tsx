@@ -47,14 +47,14 @@ const Projects = () => {
 
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="mb-4">
-                    <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border ${project.status === 'PoC'
+                    <div className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium border ${project.status === 'PoC'
                       ? 'bg-amber-100/50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400'
                       : 'bg-emerald-100/50 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400'
                       }`}>
                       {project.status === 'PoC' ? (
-                        <Lightbulb className="w-3.5 h-3.5" />
+                        <Lightbulb className="w-3 h-3 opacity-70" />
                       ) : (
-                        <Settings className="w-3.5 h-3.5" />
+                        <Settings className="w-3 h-3 opacity-70" />
                       )}
                       {project.status === 'PoC' ? 'PoC' : 'Implemented'}
                     </div>
