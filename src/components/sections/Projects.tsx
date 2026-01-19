@@ -1,18 +1,11 @@
-import { ExternalLink, Github, BarChart3, Brain, Shield, Activity, Database, Server } from 'lucide-react';
+import { ExternalLink, Github, Settings, Lightbulb } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useUserData } from '../../hooks/useUserData';
 
 const Projects = () => {
   const { projects } = useUserData();
 
-  const iconMap: Record<string, React.ElementType> = {
-    'Machine Learning': Brain,
-    'Anomaly Detection': Shield,
-    'Time Series': Activity,
-    'Operations Analytics': Database,
-    'Statistical Analysis': BarChart3,
-    'Supply Chain Analytics': Server
-  };
+
 
   return (
     <section id="projects" className="py-24 bg-white dark:bg-slate-900 relative transition-colors duration-300">
@@ -33,7 +26,6 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => {
-            const IconComponent = iconMap[project.category] || Database;
             return (
               <div
                 key={project.id}
@@ -54,9 +46,17 @@ const Projects = () => {
                 </div>
 
                 <div className="p-6 flex-1 flex flex-col">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="p-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-md shadow-sm">
-                      <IconComponent className="h-5 w-5 text-blue-800 dark:text-blue-400" />
+                  <div className="mb-4">
+                    <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border ${project.status === 'PoC'
+                      ? 'bg-amber-100/50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400'
+                      : 'bg-emerald-100/50 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400'
+                      }`}>
+                      {project.status === 'PoC' ? (
+                        <Lightbulb className="w-3.5 h-3.5" />
+                      ) : (
+                        <Settings className="w-3.5 h-3.5" />
+                      )}
+                      {project.status === 'PoC' ? 'PoC' : 'Implemented'}
                     </div>
                   </div>
 
@@ -151,7 +151,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

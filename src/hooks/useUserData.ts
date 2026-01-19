@@ -43,6 +43,7 @@ export interface UserData {
     image: string;
     technologies: string[];
     category: string;
+    status: 'PoC' | 'Implemented';
     results: string[];
     github?: string;
     demo?: string;
