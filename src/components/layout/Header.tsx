@@ -62,10 +62,20 @@ const Header = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors duration-200"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors duration-200"
               aria-label="Toggle theme"
             >
-              {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+              {theme === 'light' ? (
+                <>
+                  <Moon className="h-5 w-5" />
+                  <span className="text-sm font-medium">Dark</span>
+                </>
+              ) : (
+                <>
+                  <Sun className="h-5 w-5" />
+                  <span className="text-sm font-medium">Light</span>
+                </>
+              )}
             </button>
           </nav>
 
