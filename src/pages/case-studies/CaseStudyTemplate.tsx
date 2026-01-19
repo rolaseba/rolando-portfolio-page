@@ -118,7 +118,9 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                     <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Overview</h2>
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                            {data.sections.overview}
+                            <span
+                                dangerouslySetInnerHTML={{ __html: data.sections.overview.replace(/\*\*(.*?)\*\*/g, '<strong class="text-slate-900 dark:text-white">$1</strong>') }}
+                            />
                         </p>
                     </div>
                 </section>
@@ -130,7 +132,10 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                         {data.sections.businessValue.map((value, index) => (
                             <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
                                 <span className="text-green-600 dark:text-green-400 mr-3 text-xl font-bold">•</span>
-                                <span className="leading-relaxed">{value}</span>
+                                <span
+                                    className="leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: value.replace(/\*\*(.*?)\*\*/g, '<strong class="text-slate-900 dark:text-white">$1</strong>') }}
+                                />
                             </li>
                         ))}
                     </ul>
@@ -159,7 +164,10 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                         {data.sections.benefits.map((benefit, index) => (
                             <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
                                 <span className="text-slate-400 dark:text-slate-500 mr-3 text-xl font-bold">•</span>
-                                <span className="leading-relaxed">{benefit}</span>
+                                <span
+                                    className="leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: benefit.replace(/\*\*(.*?)\*\*/g, '<strong class="text-slate-900 dark:text-white">$1</strong>') }}
+                                />
                             </li>
                         ))}
                     </ul>
