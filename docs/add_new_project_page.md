@@ -154,7 +154,6 @@ Open `your-project-slug.json` and update all fields:
   "links": {
     "demo": "https://your-demo-url.com",     // or null if no demo
     "github": "https://github.com/...",      // or null if no repo
-    "notion": null,                           // deprecated, always null
     "linkedin": "https://linkedin.com/in/sjrolando"
   }
 }

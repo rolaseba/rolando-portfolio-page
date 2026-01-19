@@ -70,15 +70,6 @@ const Projects = () => {
                       >
                         {project.title}
                       </Link>
-                    ) : project.notion ? (
-                      <a
-                        href={project.notion}
-                        className="after:absolute after:inset-0 after:z-10"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {project.title}
-                      </a>
                     ) : (
                       project.title
                     )}

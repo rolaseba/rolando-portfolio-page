@@ -221,7 +221,6 @@
         "Real-time overspend alerts prevent losses",
         "Supplier accountability supported by objective evidence"
       ],
-      "notion": "https://sebalink.notion.site/Material-Cost-Behavior-Supplier-Performance-Analysis-66a6a4c0e0f0432da4a0d08d1f1f94b3",
       "caseStudyPath": "/projects/material-cost-performance"
     },
     {
@@ -245,7 +244,6 @@
         "Designed 47 custom metrics (19 movement-related, 28 cost-related)",
         "Enabled catalog depuration and justified physical space liberation"
       ],
-      "notion": "https://sebalink.notion.site/Warehouse-Strategy-Obsolescence-Reduction-Project-25501dccd06c80e6b792d77d09d17aea",
       "caseStudyPath": "/projects/warehouse-strategy-obsolescence"
     },
     {
@@ -269,7 +267,6 @@
         "Identified critical parameters (e.g., Efdm, PT, Fil T, S>2.5, SMKR) with directional recommendations",
         "Quantified potential improvements in yield and energy efficiency"
       ],
-      "notion": "https://sebalink.notion.site/Malt-Production-Performance-Optimization-23801dccd06c80238e85c326428e1270",
       "caseStudyPath": "/projects/malt-production-optimization"
     },
     {
@@ -292,7 +289,6 @@
         "Scalable for future digitalization initiatives",
         "Global alignment in corporate data unification"
       ],
-      "notion": "https://sebalink.notion.site/Process-Sensors-Mapping-Project-25601dccd06c8008acdcdcbd99280c37",
       "caseStudyPath": "/projects/process-sensors-mapping"
     }
   ],

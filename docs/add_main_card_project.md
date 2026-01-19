@@ -75,7 +75,6 @@ Add a new object to the `projects` array:
 | `results` | ✅ Yes | 2 key achievements | `["Result 1", "Result 2"]` |
 | `github` | ❌ No | GitHub repo URL or `null` | `"https://github.com/..."` |
 | `demo` | ❌ No | Live demo URL or `null` | `"https://demo.com"` |
-| `notion` | ❌ No | External Case Study URL | `"https://notion.so/..."` |
 | `caseStudyPath` | ❌ No | Internal Case Study Route | `"/projects/slug"` |
 
 ### 2.4 Available Categories
