@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "This project presents a Proof of Concept (PoC) for optimizing malt production by analyzing 13 years of historical data from a 350 TN/year plant. By focusing on physicochemical, process, and quality parameters, the study applied advanced statistical methods and feature selection to identify the variables with the greatest influence on production yield and costs. The framework bridges the technical process control gap with commercial decision-making.",
+        "overview": "This project was for optimizing malt production by analyzing 13 years of historical data from a 350 TN/year plant. By focusing on physicochemical, process, and quality parameters, the study applied advanced statistical methods and feature selection to identify the variables with the greatest influence on production yield and costs. The framework bridges the technical process control gap with commercial decision-making.",
         "businessValue": [
             "Operationally: Pinpoints parameters influencing yield and quality to guide process optimization",
             "Commercially: Quantifies cost impact of client-requested parameter adjustments for fair pricing",
