@@ -7,6 +7,7 @@ import WarehouseObsolescencePage from './pages/case-studies/WarehouseObsolescenc
 import MaltOptimizationPage from './pages/case-studies/MaltOptimizationPage';
 import LSTMEnergyPage from './pages/case-studies/LSTMEnergyPage';
 import HotelCancellationPage from './pages/case-studies/HotelCancellationPage';
+import ProcessMappingPage from './pages/case-studies/ProcessMappingPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/projects/malt-production-optimization" element={<Layout><MaltOptimizationPage /></Layout>} />
         <Route path="/projects/lstm-energy-demand" element={<Layout><LSTMEnergyPage /></Layout>} />
         <Route path="/projects/hotel-cancellation-prediction" element={<Layout><HotelCancellationPage /></Layout>} />
+        <Route path="/projects/process-sensors-mapping" element={<Layout><ProcessMappingPage /></Layout>} />
       </Routes>
     </Router>
   );

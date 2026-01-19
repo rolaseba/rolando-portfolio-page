@@ -1,0 +1,90 @@
+{
+    "id": 7,
+    "slug": "process-sensors-mapping",
+    "title": "Process & Sensors Mapping Project",
+    "subtitle": "Interactive hierarchical visualization tool mapping production processes and PLC tags for global digitalization initiative.",
+    "keyImpact": [
+        {
+            "value": "Hierarchy",
+            "label": "Structured Mapping",
+            "description": "Processes & Sensors organized",
+            "icon": "Database"
+        },
+        {
+            "value": "Integration",
+            "label": "Aveva PI Ready",
+            "description": "Standardized for digitalization",
+            "icon": "Activity"
+        },
+        {
+            "value": "Interactive",
+            "label": "Visual Tool",
+            "description": "Dynamic graph with hover details",
+            "icon": "Eye"
+        }
+    ],
+    "sections": {
+        "overview": "This project focused on developing a mapping and visualization tool that enabled the identification and organization of production processes and their physical sensors (PLC tags) into a clear hierarchical structure. The tool was key and necessary to bridge the technical complexity of the plant with the needs of the global digitalization project, ensuring that detailed local process and sensor information could be standardized and successfully integrated into the corporate software Aveva PI.",
+        "businessValue": [
+            "**Standardization**: clear and hierarchical organization of processes and PLC tags.",
+            "**Digitalization**: preparing information for integration into Aveva PI.",
+            "**Visibility**: improved understanding of the relationship between processes and sensors.",
+            "**Collaboration**: common ground between local and global teams for automation and Industry 4.0 projects."
+        ],
+        "keyResults": [
+            "Development of an **interactive hierarchical graph** representing processes and parent-child relationships.",
+            "Integration of **PLC tags and statuses** associated with each process.",
+            "**Hover functionality** to display technical details (name, level, PLC tag, status).",
+            "Identification of processes **“To Be Implemented (TBI)”**, highlighted with distinct visual styling.",
+            "Exported visual representations for effective communication with stakeholders."
+        ],
+        "benefits": [
+            "**Reduced complexity** in managing processes and sensors.",
+            "**Solid foundation** for signal capture and analysis in Aveva PI.",
+            "**Scalability** for future digitalization initiatives.",
+            "**Global alignment** in corporate data unification projects."
+        ],
+        "stakeholders": [
+            "Operations",
+            "Process Engineering",
+            "Automation",
+            "Global IT"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NetworkX",
+            "Plotly",
+            "Excel"
+        ],
+        "methods": [
+            {
+                "name": "Hierarchical Graphing",
+                "description": "Modeling parent-child relationships between processes using NetworkX"
+            },
+            {
+                "name": "Data Integration",
+                "description": "Merging process definitions with PLC tag statuses from Excel sources"
+            },
+            {
+                "name": "Interactive Visualization",
+                "description": "Creating dynamic plots with Plotly to allow exploration of the hierarchy"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Process & Sensors Mapping Project/figures/Process_Hierarchy.png",
+                "caption": "Process Hierarchy Example"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Process & Sensors Mapping Project/figures/Process_Hierarchy_Tags.png",
+                "caption": "Process and Tags Visualization"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}
