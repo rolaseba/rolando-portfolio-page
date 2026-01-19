@@ -83,19 +83,19 @@
         "visualEvidence": [
             {
                 "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot2-edit.png",
-                "caption": "Consumption Peaks – Dispatch vs Trend Analysis"
+                "caption": "Consumption Peaks (impacted by quantity and frequency)"
             },
             {
                 "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot1-edit.png",
-                "caption": "Anomaly Detection with Statistical Thresholds"
+                "caption": "Dispach Anomaly Detection"
             },
             {
                 "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot-edit.png",
-                "caption": "Time Series Pattern Recognition"
+                "caption": "Consumption Peaks Recognition"
             },
             {
                 "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/equipos-edit.png",
-                "caption": "Equipment-Level Consumption Tracking"
+                "caption": "Equipment-Level Impacted (Spare Parts Peak Consumption)"
             }
         ]
     },
