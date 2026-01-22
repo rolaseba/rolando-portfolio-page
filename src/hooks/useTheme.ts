@@ -11,7 +11,7 @@ export const useTheme = () => {
                 return savedTheme;
             }
         }
-        return 'dark';
+        return 'light';
     });
 
     useEffect(() => {

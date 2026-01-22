@@ -221,7 +221,8 @@
         "Real-time overspend alerts prevent losses",
         "Supplier accountability supported by objective evidence"
       ],
-      "caseStudyPath": "/projects/material-cost-performance"
+      "caseStudyPath": "/projects/material-cost-performance",
+      "demo": "https://warehouse-material-analysis-playground.pages.dev"
     },
     {
       "id": 5,
