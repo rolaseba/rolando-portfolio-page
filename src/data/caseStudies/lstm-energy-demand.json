@@ -1,7 +1,7 @@
 {
     "id": 1,
     "slug": "lstm-energy-demand",
-    "title": "LSTM Energy Demand Prediction",
+    "title": "LSTM Energy Demand Forecast",
     "subtitle": "Hourly electricity demand forecasting using Deep Learning for national grid stability",
     "keyImpact": [
         {
@@ -19,7 +19,7 @@
         {
             "value": "24h Ahead",
             "label": "Forecasting",
-            "description": "Multi-step prediction for the next day's consumption",
+            "description": "Multi-step forecast for the next day's consumption",
             "icon": "TrendingUp"
         }
     ],
@@ -28,7 +28,7 @@
         "body": "This is a self-initiated professional Data Science project built using real-world public data to demonstrate end-to-end forecasting, deep learning modeling, and business-oriented decision support for national energy systems."
     },
     "sections": {
-        "overview": "Developed an LSTM-based deep learning model to forecast hourly electricity demand using public data representative of Bangladesh’s national power grid operations (PGCB context), managing ~25,700 MW of installed capacity. The solution enables proactive grid management, resource optimization, and cost reduction by predicting demand patterns with high accuracy using 168-hour sequence inputs.",
+        "overview": "To support national grid stability and cost-efficient energy dispatch, I developed a deep learning model using Long Short-Term Memory (LSTM) neural networks for hourly electricity demand forecasting. Using public data representative of Bangladesh's power grid (PGCB), the model processes 168-hour sequences to predict consumption patterns with high accuracy (3.95% MAPE), enabling proactive capacity planning and optimized resource allocation for a system managing ~25,700 MW.",
         "businessValue": [
             "Grid Stability: Prevents blackouts and overload conditions through accurate demand foresight",
             "Resource Allocation: Optimizes generation across coal, gas, hydro, and renewable sources",

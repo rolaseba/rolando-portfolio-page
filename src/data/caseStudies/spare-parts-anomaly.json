@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "This project detects anomalies in item consumption based on historical dispatch data from an industrial warehouse. It integrates data wrangling, time series analysis, seasonality detection, and anomaly detection techniques to identify unusual dispatch behavior for specific inventory items. The system supports proactive maintenance and stock control by highlighting abnormal consumption patterns before they escalate into critical failures.",
+        "overview": "I developed an anomaly detection system for spare parts consumption in an industrial warehouse to control costs and prevent operational failures. Utilizing historical dispatch data, I applied data wrangling, time-series analysis, and statistical modeling techniques to distinguish normal operational variability from anomalous consumption. This solution enabled extra proactive maintenance actions, optimized inventory control, and reduced unplanned downtime, supporting more informed and efficient procurement and maintenance planning.",
         "businessValue": [
             "Early detection of equipment failures and material misuse",
             "Reduction of unnecessary stock usage and procurement costs",
