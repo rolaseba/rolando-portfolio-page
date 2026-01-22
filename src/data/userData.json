@@ -127,7 +127,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "LSTM Energy Demand Prediction",
+      "title": "LSTM Energy Demand Forecasting",
       "status": "PoC",
       "description": "LSTM-based model for hourly electricity demand forecasting using PGCB (Bangladesh Power Grid Company) data. Implements 24-hour multi-step ahead forecasting with MAPE of 3.95%, enabling proactive resource management for grid operators managing ~25,700 MW of installed capacity.",
       "image": "/rolando-portfolio-page/projects/lstm-energy.png",
