@@ -154,28 +154,25 @@
     },
     {
       "id": 2,
-      "title": "Hotel Reservation Cancellation Prediction",
-      "status": "PoC",
-      "description": "Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.",
-      "image": "/rolando-portfolio-page/projects/hotel-cancellation.png",
+      "title": "Material Cost Behavior & Supplier Performance Analysis",
+      "status": "Implemented",
+      "description": "Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.",
+      "image": "/rolando-portfolio-page/projects/cost-behavior.png",
       "technologies": [
         "Python",
-        "Scikit-learn",
-        "XGBoost",
-        "CatBoost",
-        "SVMSMOTE",
-        "Streamlit"
+        "Pandas",
+        "NumPy",
+        "Plotly"
       ],
-      "category": "Machine Learning",
+      "category": "Supply Chain Analytics",
       "results": [
-        "88.2% accuracy, 84% sensitivity",
-        "83% precision for efficient budget allocation",
-        "Production-ready Streamlit application",
-        "Addresses $670K annual revenue loss"
+        "~150-200 KUSD potential annual savings",
+        "Identified high-value, high-risk items for prioritization",
+        "Real-time overspend alerts prevent losses",
+        "Supplier accountability supported by objective evidence"
       ],
-      "github": "https://github.com/rolaseba/hotel-reservation-prediction",
-      "demo": "https://hotel-reservation-prediction.streamlit.app",
-      "caseStudyPath": "/projects/hotel-cancellation-prediction"
+      "caseStudyPath": "/projects/material-cost-performance",
+      "demo": "https://warehouse-material-analysis-playground.pages.dev"
     },
     {
       "id": 3,
@@ -204,25 +201,28 @@
     },
     {
       "id": 4,
-      "title": "Material Cost Behavior & Supplier Performance Analysis",
-      "status": "Implemented",
-      "description": "Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.",
-      "image": "/rolando-portfolio-page/projects/cost-behavior.png",
+      "title": "Hotel Reservation Cancellation Prediction",
+      "status": "PoC",
+      "description": "Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.",
+      "image": "/rolando-portfolio-page/projects/hotel-cancellation.png",
       "technologies": [
         "Python",
-        "Pandas",
-        "NumPy",
-        "Plotly"
+        "Scikit-learn",
+        "XGBoost",
+        "CatBoost",
+        "SVMSMOTE",
+        "Streamlit"
       ],
-      "category": "Supply Chain Analytics",
+      "category": "Machine Learning",
       "results": [
-        "~150-200 KUSD potential annual savings",
-        "Identified high-value, high-risk items for prioritization",
-        "Real-time overspend alerts prevent losses",
-        "Supplier accountability supported by objective evidence"
+        "88.2% accuracy, 84% sensitivity",
+        "83% precision for efficient budget allocation",
+        "Production-ready Streamlit application",
+        "Addresses $670K annual revenue loss"
       ],
-      "caseStudyPath": "/projects/material-cost-performance",
-      "demo": "https://warehouse-material-analysis-playground.pages.dev"
+      "github": "https://github.com/rolaseba/hotel-reservation-prediction",
+      "demo": "https://hotel-reservation-prediction.streamlit.app",
+      "caseStudyPath": "/projects/hotel-cancellation-prediction"
     },
     {
       "id": 5,
