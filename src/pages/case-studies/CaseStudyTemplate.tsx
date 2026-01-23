@@ -217,7 +217,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
                             >
                                 <ExternalLink className="h-5 w-5" />
-                                Demo App
+                                Live Demo
                             </a>
                         )}
                         {data.links.github && (
