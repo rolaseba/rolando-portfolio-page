@@ -88,6 +88,10 @@
             {
                 "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_1_case_alt.png",
                 "caption": "Specialty Lubricant Supplier - Price Deviation Detection"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/supplier-segmentation.png",
+                "caption": "Supplier segmentation by Leadtime and Cost Variation"
             }
         ]
     },
