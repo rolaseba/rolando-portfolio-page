@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "This project was for optimizing malt production by analyzing 13 years of historical data from a 350 TN/year plant. By focusing on physicochemical, process, and quality parameters, the study applied advanced statistical methods and feature selection to identify the variables with the greatest influence on production yield and costs. The framework bridges the technical process control gap with commercial decision-making.",
+        "overview": "I developed a **production optimization framework** for a malt manufacturing plant by analyzing 13 years of historical operational data. The challenge was to identify which of many **process parameters** most significantly influenced **production yield** and **quality outcomes**. To address this, I applied **advanced statistical methods**—including correlation analysis and hypothesis testing—to evaluate the complex relationships between variables. This analysis successfully bridged the gap between technical process control and commercial strategy, providing actionable insights for **process improvement** and **data-driven pricing** decisions.",
         "businessValue": [
             "Operationally: Pinpoints parameters influencing yield and quality to guide process optimization",
             "Commercially: Quantifies cost impact of client-requested parameter adjustments for fair pricing",

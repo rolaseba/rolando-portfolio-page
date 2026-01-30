@@ -24,15 +24,15 @@
         }
     ],
     "sections": {
-        "overview": "This project addressed the challenge of analyzing inventory dynamics and rotation within a complex warehouse environment using data from multiple non-integrated management systems. By consolidating and harmonizing fragmented datasets, I implemented a comprehensive framework of 47 custom metrics (19 movement-related and 28 cost-related). This solution enables systematic identification of obsolescence, realigns replenishment strategies (ROP, EOQ), and optimizes budget allocation towards actual material usage.",
+        "overview": "I led a project to tackle **inventory obsolescence** and **capital risk** by unifying data from multiple fragmented warehouse systems. The goal was to identify inactive stock and **quantify the financial exposure** from these materials. I designed a framework of **47 custom metrics** that detected obsolete items and calculated **capital at risk** from prolonged inactivity. This transformed scattered data into a strategic tool for **inventory optimization**, enabling both the recovery of immobilized value and the **prevention of future capital tie-up**.",
         "businessValue": [
             "Integrated view of fragmented systems: Unified decision-making framework from raw data",
             "Obsolescence Detection: Systematic identification of items for removal to free physical space",
             "Budget Optimization: Shifted financial resources toward real material usage, avoiding immobilization"
         ],
         "keyResults": [
-            "Identified **40-50%** of catalog as potentially obsolete or immobilized",
-            "Quantified **several hundred KUSD** in value for materials inactive for 1-3 years",
+            "Identified **40-50%** of catalog as potentially obsolete or immobilized (defined more than 3 years)",
+            "Quantified **USD 500K+** in capital at risk from materials inactive for 1-3 years",
             "Detected hundreds of items with **zero movement since creation**",
             "Re-calibrated replenishment parameters (**ROP, EOQ**) based on actual behavior"
         ],

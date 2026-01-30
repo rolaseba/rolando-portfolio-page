@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "This project focused on developing a **mapping and visualization tool** that enabled the identification and organization of **production processes** and their **physical sensors (PLC tags)** into a clear hierarchical structure. The tool was key and necessary to bridge the technical complexity of the plant with the needs of the global digitalization project, ensuring that detailed local process and sensor information could be standardized and successfully integrated into the corporate software **Aveva PI**.",
+        "overview": "I developed an **interactive hierarchical visualization tool** using **Python** and Plotly to map **production processes and PLC sensors**, transforming complex plant data into a standardized, **Aveva PI-ready** structure. This established a clear digitalization foundation, reducing technical complexity and enabling **global data alignment** for corporate integration.",
         "businessValue": [
             "**Standardization**: clear and hierarchical organization of processes and PLC tags.",
             "**Digitalization**: preparing information for integration into Aveva PI.",

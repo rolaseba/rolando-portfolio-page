@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "This project delivers a specialized cost analytics framework designed to identify pricing risks, detect supplier deviations, and highlight opportunities for savings in warehouse material purchases. It combines multi-year purchasing history with advanced data preparation to create custom performance indicators for cost stability and price change detection. The framework features a real-time overspend alert tool that flags excessive price increases during purchase order creation, empowering procurement teams to take immediate action.",
+        "overview": "I developed a **cost analytics framework** to address **pricing risks** and **supplier deviations** within warehouse material purchases. The challenge was to transform multi-year purchasing data into actionable insights for **strategic savings**. I tackled this by engineering specialized **cost stability indicators** and implementing **real-time overspend alert** mechanisms during procurement. This solution successfully empowered the procurement team with **objective evidence** for negotiations and **automated flagging** of price increases, leading to significant identified savings and enhanced **budget control**.",
         "businessValue": [
             "Direct Savings: Identify overpricing and quantify impact for renegotiations",
             "Risk Control: Flag unstable materials and prioritize high-spend items",

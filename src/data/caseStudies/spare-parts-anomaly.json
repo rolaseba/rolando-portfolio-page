@@ -24,7 +24,7 @@
         }
     ],
     "sections": {
-        "overview": "I developed an anomaly detection system for spare parts consumption in an industrial warehouse to control costs and prevent operational failures. Utilizing historical dispatch data, I applied data wrangling, time-series analysis, and statistical modeling techniques to distinguish normal operational variability from anomalous consumption. This solution enabled extra proactive maintenance actions, optimized inventory control, and reduced unplanned downtime, supporting more informed and efficient procurement and maintenance planning.",
+        "overview": "I developed an **anomaly detection system** for **spare parts consumption** in an industrial warehouse to control rising costs and prevent **operational failures**. The challenge was to distinguish **normal operational variability** from **abnormal consumption patterns** using **historical dispatch data**. I tackled this by applying **time-series analysis** and **statistical modeling** techniques, including **EWMA, Z-score, and CUSUM**. This solution successfully enabled **proactive maintenance actions** and optimized **inventory control**, leading to a significant reduction in **unplanned downtime** and substantial **cost savings** from prevented unnecessary consumption.",
         "businessValue": [
             "Early detection of equipment failures and material misuse",
             "Reduction of unnecessary stock usage and procurement costs",
