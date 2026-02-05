@@ -141,9 +141,12 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-16">
-          <a href="#" className="inline-flex items-center justify-center gap-2 text-slate-600 dark:text-slate-400 font-semibold border-b-2 border-slate-200 dark:border-slate-700 pb-1 hover:text-blue-800 dark:hover:text-blue-400 hover:border-blue-800 dark:hover:border-blue-400 transition-all duration-200">
+          <button
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center justify-center gap-2 text-slate-600 dark:text-slate-400 font-semibold border-b-2 border-slate-200 dark:border-slate-700 pb-1 hover:text-blue-800 dark:hover:text-blue-400 hover:border-blue-800 dark:hover:border-blue-400 transition-all duration-200"
+          >
             {t.viewAllCaseStudies} <ExternalLink className="h-4 w-4" />
-          </a>
+          </button>
         </div>
       </div>
     </section >
