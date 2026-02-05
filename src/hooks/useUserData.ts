@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import userData from '../data/userData.json';
+import userDataEs from '../data/userData_es.json';
+import { useLanguage } from './useLanguage';
 
 export interface UserData {
   personal: {
@@ -76,12 +78,14 @@ export interface UserData {
 }
 
 export const useUserData = (): UserData => {
-  const [data, setData] = useState<UserData>(userData as UserData);
+  const { language } = useLanguage();
+  // Initialize with the data corresponding to the current language
+  const [data, setData] = useState<UserData>((language === 'es' ? userDataEs : userData) as UserData);
 
   useEffect(() => {
-    // You can add logic here to fetch data from an API if needed
-    setData(userData as UserData);
-  }, []);
+    // Update data when language changes
+    setData((language === 'es' ? userDataEs : userData) as UserData);
+  }, [language]);
 
   return data;
 };

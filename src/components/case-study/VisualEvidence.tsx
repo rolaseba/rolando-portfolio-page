@@ -7,10 +7,16 @@ interface VisualEvidenceProps {
     items: VisualEvidenceItem[];
 }
 
+import { useLanguage } from '../../hooks/useLanguage';
+import { translations } from '../../data/translations';
+
 const VisualEvidence = ({ items }: VisualEvidenceProps) => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     return (
         <section className="mb-20">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Visual Evidence</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.visualEvidence}</h2>
             <div className="space-y-8">
                 {items.map((visual, index) => (
                     <div key={index} className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
@@ -28,7 +34,7 @@ const VisualEvidence = ({ items }: VisualEvidenceProps) => {
                 ))}
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 italic mt-6 text-center">
-                All values shown have been altered using controlled noise or randomized scaling to protect confidential business data.
+                {t.confidentialityDisclaimer}
             </p>
         </section>
     );

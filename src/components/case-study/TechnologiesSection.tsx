@@ -1,11 +1,17 @@
+import { useLanguage } from '../../hooks/useLanguage';
+import { translations } from '../../data/translations';
+
 interface TechnologiesSectionProps {
     technologies: string[];
 }
 
 const TechnologiesSection = ({ technologies }: TechnologiesSectionProps) => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     return (
         <section className="mb-20">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Technologies Used</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.technologiesUsed}</h2>
             <div className="flex flex-wrap gap-3">
                 {technologies.map((tech, index) => (
                     <span

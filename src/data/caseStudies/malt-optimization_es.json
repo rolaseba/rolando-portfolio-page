@@ -1,0 +1,89 @@
+{
+    "id": 6,
+    "slug": "malt-production-optimization",
+    "title": "Optimización del Rendimiento de Producción de Malta",
+    "subtitle": "Aprovechando 13 años de datos históricos para la optimización de rendimiento de producción y calidad",
+    "keyImpact": [
+        {
+            "value": "13 Años",
+            "label": "Profundidad de Datos",
+            "description": "Análisis de producción histórica",
+            "icon": "Database"
+        },
+        {
+            "value": "52+",
+            "label": "Variables",
+            "description": "Parámetros de proceso evaluados",
+            "icon": "Activity"
+        },
+        {
+            "value": "Aplicado",
+            "label": "Estadística Avanzada",
+            "description": "Pearson, Cramér’s V, ANOVA/Tukey",
+            "icon": "Brain"
+        }
+    ],
+    "sections": {
+        "overview": "Desarrollé un **framework de optimización de producción** para una planta fabricadora de malta analizando 13 años de datos operativos históricos. El desafío fue identificar cuál de los muchos **parámetros de proceso** influía más significativamente en el **rendimiento de producción** y los **resultados de calidad**. Para abordar esto, apliqué **métodos estadísticos avanzados**—incluyendo análisis de correlación y pruebas de hipótesis—para evaluar las relaciones complejas entre variables. Este análisis unió exitosamente la brecha entre el control técnico de procesos y la estrategia comercial, proporcionando insights accionables para la **mejora de procesos** y decisiones de **precios basadas en datos**.",
+        "businessValue": [
+            "Operacionalmente: Identifica parámetros que influyen en el rendimiento y calidad para guiar la optimización de procesos",
+            "Comercialmente: Cuantifica el impacto en costos de los ajustes de parámetros solicitados por el cliente para precios justos",
+            "Integración Estratégica: Conecta el control técnico de procesos con los equipos de cara al cliente"
+        ],
+        "keyResults": [
+            "Se procesaron **13 años** de datos con más de **52 variables** evaluadas",
+            "Se construyeron matrices de correlación estadísticamente significativas para **parámetros críticos** (Efdm, PT, Fil T, etc.)",
+            "Se identificaron recomendaciones direccionales (↑/↓) para la mejora del rendimiento",
+            "Se cuantificaron mejoras potenciales en **rendimiento y eficiencia energética**"
+        ],
+        "benefits": [
+            "Acciones dirigidas para reducir el uso de energía y desperdicio de material",
+            "Cuantificación de costos basada en evidencia para soporte en precios de contratos",
+            "Detección temprana de desviaciones de rangos óptimos de parámetros de calidad",
+            "Soporte de investigación para adaptar recetas a diferentes cosechas de cebada"
+        ],
+        "stakeholders": [
+            "Producción y Operaciones",
+            "Aseguramiento de Calidad",
+            "I+D (Investigación y Desarrollo)",
+            "Comercial y Relaciones con Clientes"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "SciPy"
+        ],
+        "methods": [
+            {
+                "name": "Análisis de Correlación",
+                "description": "Pearson y Cramér’s V para identificar relaciones entre parámetros"
+            },
+            {
+                "name": "Significancia Estadística",
+                "description": "ANOVA y Tukey HSD para pruebas de varianza e hipótesis"
+            },
+            {
+                "name": "Selección de Características",
+                "description": "Filtrado de variables basado en umbrales de significancia"
+            },
+            {
+                "name": "Mapeo Inter-parámetro",
+                "description": "Visualización de relaciones complejas entre variables de proceso"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Malt Production Performance Optimization/figures/inter-parameter_correlation_alterated.png",
+                "caption": "Matriz de Correlación Inter-Parámetro - Identificando Variables Impactantes"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

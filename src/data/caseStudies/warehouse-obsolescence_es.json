@@ -1,0 +1,101 @@
+{
+    "id": 5,
+    "slug": "warehouse-strategy-obsolescence",
+    "title": "Estrategia de Almacén y Reducción de Obsolescencia",
+    "subtitle": "Optimizando la dinámica de inventario y reduciendo el capital inmovilizado a través de métricas basadas en datos",
+    "keyImpact": [
+        {
+            "value": "47 Métricas",
+            "label": "Indicadores Personalizados",
+            "description": "Diseño e implementación de métricas operativas",
+            "icon": "Activity"
+        },
+        {
+            "value": "40-50%",
+            "label": "Tasa de Obsolescencia",
+            "description": "Ítems identificados como potencialmente obsoletos/inmovilizados",
+            "icon": "TrendingUp"
+        },
+        {
+            "value": "USD 500K+",
+            "label": "Capital en Riesgo",
+            "description": "Riesgo cuantificado por materiales inactivos",
+            "icon": "DollarSign"
+        }
+    ],
+    "sections": {
+        "overview": "Lideré un proyecto para abordar la **obsolescencia de inventario** y el **riesgo de capital** unificando datos de múltiples sistemas de almacén fragmentados. El objetivo era identificar stock inactivo y **cuantificar la exposición financiera** de estos materiales. Diseñé un framework de **47 métricas personalizadas** que detectó ítems obsoletos y calculó el **capital en riesgo** por inactividad prolongada. Esto transformó datos dispersos en una herramienta estratégica para la **optimización de inventario**, permitiendo tanto la recuperación de valor inmovilizado como la **prevención de futuro atascamiento de capital**.",
+        "businessValue": [
+            "Visión integrada de sistemas fragmentados: Framework de toma de decisiones unificada desde datos crudos",
+            "Detección de Obsolescencia: Identificación sistemática de ítems para remoción para liberar espacio físico",
+            "Optimización de Presupuesto: Redirección de recursos financieros hacia el uso real de materiales, evitando inmovilización"
+        ],
+        "keyResults": [
+            "Se identificó que **40-50%** del catálogo era potencialmente obsoleto o inmovilizado (definido más de 3 años)",
+            "Se cuantificó **USD 500K+** en capital en riesgo por materiales inactivos por 1-3 años",
+            "Se detectaron cientos de ítems con **cero movimiento desde su creación**",
+            "Se recalibraron parámetros de reabastecimiento (**ROP, EOQ**) basados en comportamiento real"
+        ],
+        "benefits": [
+            "Liberación de espacio físico a través de la remoción de ítems obsoletos",
+            "Reducción en gastos indirectos de almacenamiento y mantenimiento",
+            "Detección temprana de tendencias de obsolescencia para mitigar riesgo futuro",
+            "Eficiencia de proceso mejorada alineando el reabastecimiento con la demanda real"
+        ],
+        "stakeholders": [
+            "Operaciones de Almacén",
+            "Equipos de Mantenimiento",
+            "Compras",
+            "Finanzas"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Plotly"
+        ],
+        "methods": [
+            {
+                "name": "Métricas de Movimiento de Inventario",
+                "description": "Días desde último movimiento, categorías de movimiento y ratios recepción-emisión"
+            },
+            {
+                "name": "Métricas de Costo de Compra",
+                "description": "Valor inmovilizado y alineación compra-consumo"
+            },
+            {
+                "name": "Armonización de Datos",
+                "description": "Integración y limpieza de múltiples sistemas de gestión no integrados"
+            },
+            {
+                "name": "Lógica de Decisión Operativa",
+                "description": "Adaptación dinámica de umbrales de reabastecimiento y obsolescencia"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/last_time_moved_alt.png",
+                "caption": "Años Desde Último Movimiento - Visualizando Estancamiento de Inventario"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/receipt_to_issue_ratio_alt.png",
+                "caption": "Distribución de Ratio Recepción-Emisión - Identificando Patrones de Sobre-stock"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/last_time_moved_and_issue.png",
+                "caption": "Análisis de Inactividad a través de Categorías de Materiales"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Warehouse Strategy & Obsolescence Reduction Project/figures/coef_of_variation_distribution.png",
+                "caption": "Análisis de Volatilidad de Demanda para Optimización de Inventario"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "id": 7,
+    "slug": "process-sensors-mapping",
+    "title": "Proyecto de Mapeo de Procesos y Sensores",
+    "subtitle": "Herramienta de visualización jerárquica interactiva que mapea procesos de producción y tags de PLC para iniciativa global de digitalización.",
+    "keyImpact": [
+        {
+            "value": "Jerarquía",
+            "label": "Mapeo Estructurado",
+            "description": "Procesos y Sensores organizados",
+            "icon": "Database"
+        },
+        {
+            "value": "Integración",
+            "label": "Listo para Aveva PI",
+            "description": "Estandarizado para digitalización",
+            "icon": "Activity"
+        },
+        {
+            "value": "Interactivo",
+            "label": "Herramienta Visual",
+            "description": "Grafo dinámico con detalles on-hover",
+            "icon": "Eye"
+        }
+    ],
+    "sections": {
+        "overview": "Desarrollé una **herramienta de visualización jerárquica interactiva** utilizando **Python** y Plotly para mapear **procesos de producción y sensores PLC**, transformando datos complejos de planta en una estructura estandarizada **lista para Aveva PI**. Esto estableció una base clara para la digitalización, reduciendo la complejidad técnica y permitiendo la **alineación global de datos** para la integración corporativa.",
+        "businessValue": [
+            "**Estandarización**: organización clara y jerárquica de procesos y tags de PLC.",
+            "**Digitalización**: preparación de información para integración en Aveva PI.",
+            "**Visibilidad**: mejor entendimiento de la relación entre procesos y sensores.",
+            "**Colaboración**: terreno común entre equipos locales y globales para proyectos de automatización e Industria 4.0."
+        ],
+        "keyResults": [
+            "Desarrollo de un **grafo jerárquico interactivo** representando procesos y relaciones padre-hijo.",
+            "Integración de **tags de PLC y estados** asociados con cada proceso.",
+            "**Funcionalidad Hover** para mostrar detalles técnicos (nombre, nivel, tag de PLC, estado).",
+            "Identificación de procesos **“To Be Implemented (TBI)”**, resaltados con estilo visual distintivo.",
+            "Exportación de representaciones visuales para comunicación efectiva con stakeholders."
+        ],
+        "benefits": [
+            "**Reducción de complejidad** en la gestión de procesos y sensores.",
+            "**Base sólida** para captura y análisis de señales en Aveva PI.",
+            "**Escalabilidad** para futuras iniciativas de digitalización.",
+            "**Alineación global** en proyectos corporativos de unificación de datos."
+        ],
+        "stakeholders": [
+            "Operaciones",
+            "Ingeniería de Procesos",
+            "Automatización",
+            "IT Global"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NetworkX",
+            "Plotly",
+            "Excel"
+        ],
+        "methods": [
+            {
+                "name": "Graficado Jerárquico",
+                "description": "Modelado de relaciones padre-hijo entre procesos usando NetworkX"
+            },
+            {
+                "name": "Integración de Datos",
+                "description": "Fusión de definiciones de procesos con estados de tags PLC desde fuentes Excel"
+            },
+            {
+                "name": "Visualización Interactiva",
+                "description": "Creación de gráficos dinámicos con Plotly para permitir la exploración de la jerarquía"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Process & Sensors Mapping Project/figures/Process_Hierarchy.png",
+                "caption": "Ejemplo de Jerarquía de Procesos"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Process & Sensors Mapping Project/figures/Process_Hierarchy_Tags.png",
+                "caption": "Visualización de Procesos y Tags"
+            }
+        ]
+    },
+    "links": {
+        "demo": null,
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

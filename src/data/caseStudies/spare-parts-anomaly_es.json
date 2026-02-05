@@ -1,0 +1,107 @@
+{
+    "id": 3,
+    "slug": "spare-parts-anomaly-detection",
+    "title": "Detección de Anomalías de Consumo de Repuestos",
+    "subtitle": "Detección de uso anormal de repuestos para prevenir inactividad y optimizar el mantenimiento",
+    "keyImpact": [
+        {
+            "value": "-0.5%",
+            "label": "Reducción Downtime",
+            "description": "Disminución del tiempo de inactividad no planificado",
+            "icon": "TrendingDown"
+        },
+        {
+            "value": "USD 58K",
+            "label": "Ahorros Anuales",
+            "description": "Consumo innecesario prevenido",
+            "icon": "DollarSign"
+        },
+        {
+            "value": "350K TN",
+            "label": "Planta Industrial",
+            "description": "Capacidad de producción de malta/año",
+            "icon": "Factory"
+        }
+    ],
+    "sections": {
+        "overview": "Desarrollé un **sistema de detección de anomalías** para el **consumo de repuestos** en un almacén industrial para controlar costos crecientes y prevenir **fallas operativas**. El desafío fue distinguir la **variabilidad operativa normal** de los **patrones de consumo anormales** utilizando **datos históricos de despacho**. Abordé esto aplicando técnicas de **análisis de series temporales** y **modelado estadístico**, incluyendo **EWMA, Z-score y CUSUM**. Esta solución permitió exitosamente **acciones de mantenimiento proactivo** y optimizó el **control de inventario**, llevando a una reducción significativa en el **tiempo de inactividad no planificado** y sustanciales **ahorros de costos** por prevención de consumo innecesario.",
+        "businessValue": [
+            "Detección temprana de fallas en equipos y mal uso de materiales",
+            "Reducción del uso innecesario de stock y costos de adquisición",
+            "Mejor planificación del mantenimiento y prevención del tiempo de inactividad"
+        ],
+        "keyResults": [
+            "Reducción de tiempo de inactividad no planificado en **~0.5%**",
+            "Mantenimiento del objetivo de **<1.6% Tiempo de Inactividad de Emergencia** (EDT)",
+            "Generación de **USD 58K en ahorros** por consumo prevenido"
+        ],
+        "benefits": [
+            "Detección de anomalías a nivel de ítem con rigor estadístico",
+            "Escalable a través de activos, tipos de equipos y ubicaciones",
+            "Habilita acciones de mantenimiento proactivo y control de inventario"
+        ],
+        "stakeholders": [
+            "Equipos de Mantenimiento",
+            "Gestión de Almacenes",
+            "Compras y Planificación"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Plotly",
+            "SciPy",
+            "Matplotlib",
+            "Seaborn"
+        ],
+        "methods": [
+            {
+                "name": "EWMA",
+                "description": "Exponential Weighted Moving Average para suavizado de tendencias"
+            },
+            {
+                "name": "Z-score",
+                "description": "Detección estadística de anomalías en tendencias de despacho"
+            },
+            {
+                "name": "CUSUM",
+                "description": "Suma acumulativa para análisis de desviación"
+            },
+            {
+                "name": "KDE",
+                "description": "Estimación de Densidad Kernel para modelado de distribución"
+            },
+            {
+                "name": "Detección de Picos",
+                "description": "scipy.signal.find_peaks para anomalías de consumo"
+            },
+            {
+                "name": "Estadística Móvil",
+                "description": "Promedios móviles y desviación estándar para detección de volatilidad"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot2-edit.png",
+                "caption": "Picos de Consumo (impactado por cantidad y frecuencia)"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot1-edit.png",
+                "caption": "Detección de Anomalías de Despacho"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/newplot-edit.png",
+                "caption": "Reconocimiento de Picos de Consumo"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Spare Parts Consumption Anomaly Detection/figures/equipos-edit.png",
+                "caption": "Nivel de Equipo Impactado (Picos de Consumo de Repuestos)"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true",
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

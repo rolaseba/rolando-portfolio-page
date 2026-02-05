@@ -47,16 +47,19 @@ cp ~/path/to/image4.png "public/projects/Your Project Name/figures/analysis-4.pn
 
 ---
 
-## Step 2: Create Case Study Data File
+## Step 2: Create Case Study Data Files
 
-### 2.1 Copy Template
+### 2.1 Copy Template (English & Spanish)
 ```bash
 cd src/data/caseStudies
+# English
 cp spare-parts-anomaly.json your-project-slug.json
+# Spanish
+cp spare-parts-anomaly_es.json your-project-slug_es.json
 ```
 
-### 2.2 Edit JSON File
-Open `your-project-slug.json` and update all fields:
+### 2.2 Edit JSON Files
+Open `your-project-slug.json` (English) and `your-project-slug_es.json` (Spanish) and update all fields. Ensure keys match exactly between both files.
 
 ```json
 {
@@ -180,9 +183,14 @@ touch YourProjectPage.tsx
 ### 3.2 Add Component Code
 ```tsx
 import CaseStudyTemplate from './CaseStudyTemplate';
-import data from '../../data/caseStudies/your-project-slug.json';
+import dataEn from '../../data/caseStudies/your-project-slug.json';
+import dataEs from '../../data/caseStudies/your-project-slug_es.json';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export default function YourProjectPage() {
+  const { language } = useLanguage();
+  const data = language === 'es' ? dataEs : dataEn;
+
   return <CaseStudyTemplate data={data} />;
 }
 ```
@@ -216,8 +224,8 @@ import YourProjectPage from './pages/case-studies/YourProjectPage';
 
 ## Step 5: Update Project Card Data
 
-### 5.1 Edit userData.json
-Open `src/data/userData.json` and add your project to the `projects` array:
+### 5.1 Edit userData.json & userData_es.json
+Open `src/data/userData.json` and `src/data/userData_es.json`. Add your project to the `projects` array in BOTH files (translate content for the es file):
 
 ```json
 {
@@ -265,6 +273,8 @@ Open `src/data/userData.json`. Locate your project in the `projects` array and a
 }
 ```
 
+**Repeat for `src/data/userData_es.json`.**
+
 > **Note:** The project card will automatically become clickable and link to this path in a new tab.
 
 ---
@@ -300,6 +310,7 @@ npm run dev
 1. Use browser back button from case study
 2. Click case study again
 3. Verify images still load (no broken paths)
+4. Toggle language inside the case study and verify content translation
 
 ---
 
@@ -310,9 +321,11 @@ npm run dev
 git add public/projects/your-project-name.png
 git add "public/projects/Your Project Name/"
 git add src/data/caseStudies/your-project-slug.json
+git add src/data/caseStudies/your-project-slug_es.json
 git add src/pages/case-studies/YourProjectPage.tsx
 git add src/App.tsx
 git add src/data/userData.json
+git add src/data/userData_es.json
 
 git commit -m "feat: add case study page for Your Project Name"
 git push
@@ -335,10 +348,13 @@ This will build and deploy to GitHub Pages automatically.
 - [ ] 4 visual evidence images in `/public/projects/Your Project Name/figures/`
 
 ### Code Files
-- [ ] Case study data: `/src/data/caseStudies/your-project-slug.json`
+### Code Files
+- [ ] Case study data (EN): `/src/data/caseStudies/your-project-slug.json`
+- [ ] Case study data (ES): `/src/data/caseStudies/your-project-slug_es.json`
 - [ ] Page component: `/src/pages/case-studies/YourProjectPage.tsx`
 - [ ] Route added in: `/src/App.tsx`
-- [ ] Project card data (with `caseStudyPath`): `/src/data/userData.json`
+- [ ] Project card data (EN): `/src/data/userData.json`
+- [ ] Project card data (ES): `/src/data/userData_es.json`
 
 ### Testing
 - [ ] Dev server runs without errors
@@ -453,15 +469,23 @@ cp ~/Downloads/lstm-*.png "public/projects/LSTM Energy Demand Prediction/figures
 
 # 3. Create JSON
 cd src/data/caseStudies
+# 3. Create JSONs
+cd src/data/caseStudies
 cp spare-parts-anomaly.json lstm-energy.json
-# Edit lstm-energy.json with your content
+cp spare-parts-anomaly_es.json lstm-energy_es.json
+# Edit lstm-energy.json and lstm-energy_es.json with your content
 
 # 4. Create page component
 cat > src/pages/case-studies/LSTMEnergyPage.tsx << 'EOF'
 import CaseStudyTemplate from './CaseStudyTemplate';
-import data from '../../data/caseStudies/lstm-energy.json';
+import CaseStudyTemplate from './CaseStudyTemplate';
+import dataEn from '../../data/caseStudies/lstm-energy.json';
+import dataEs from '../../data/caseStudies/lstm-energy_es.json';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export default function LSTMEnergyPage() {
+  const { language } = useLanguage();
+  const data = language === 'es' ? dataEs : dataEn;
   return <CaseStudyTemplate data={data} />;
 }
 EOF

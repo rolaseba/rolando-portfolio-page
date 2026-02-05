@@ -34,6 +34,7 @@ The portfolio is deployed and available online: [https://rolaseba.github.io/rola
 ## Features
 
 - Responsive design (mobile, tablet, desktop)
+- **Bilingual Support (English / Spanish)**
 - 6 project showcase cards with links to GitHub repos and live demos
 - Smooth scrolling navigation
 - Contact form with email integration

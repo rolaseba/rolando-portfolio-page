@@ -1,14 +1,22 @@
 import { Target, Clock, Award, Zap, ChevronDown } from 'lucide-react';
 import { useUserData } from '../../hooks/useUserData';
+import { useLanguage } from '../../hooks/useLanguage';
+import { translations } from '../../data/translations';
 
 const About = () => {
   const { about, skills } = useUserData();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const iconMap: Record<string, React.ElementType> = {
     'Years Experience': Clock,
+    'Años de Experiencia': Clock,
     'Annual Savings Generated': Target,
+    'Ahorros Anuales Generados': Target,
     'Stock-out Reduction': Award,
-    'Plant Reliability': Zap
+    'Reducción de Stock-out': Award,
+    'Plant Reliability': Zap,
+    'Confiabilidad de Planta': Zap
   };
 
   return (
@@ -16,7 +24,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6">
-            Professional Profile
+            {t.professionalProfile}
           </h2>
           <div className="w-24 h-1 bg-blue-900 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
@@ -25,7 +33,7 @@ const About = () => {
           {/* About Text */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 border-l-4 border-blue-600 dark:border-blue-500 pl-4">
-              Turning Data into Operational Value
+              {t.turningDataValue}
             </h3>
 
             <div className="prose prose-lg text-slate-600 dark:text-slate-400 space-y-6">
@@ -38,7 +46,7 @@ const About = () => {
 
             <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
               <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-                <Zap className="h-5 w-5 text-yellow-600 dark:text-yellow-400" /> Core Focus
+                <Zap className="h-5 w-5 text-yellow-600 dark:text-yellow-400" /> {t.coreFocus}
               </h4>
               <ul className="space-y-3">
                 {about.whatIDo.map((item, index) => (
@@ -73,14 +81,18 @@ const About = () => {
 
             {/* Proficiency */}
             <div>
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">Technical Expertise</h3>
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">{t.technicalExpertise}</h3>
               <div className="space-y-5">
                 {skills.categories.map((category, index) => {
                   const colorMap: Record<string, string> = {
                     "Languages & Libraries": "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800",
+                    "Lenguajes y Librerías": "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800",
                     "Techniques & Methods": "bg-teal-100 text-teal-800 border-teal-200 dark:bg-teal-900/30 dark:text-teal-200 dark:border-teal-800",
+                    "Técnicas y Métodos": "bg-teal-100 text-teal-800 border-teal-200 dark:bg-teal-900/30 dark:text-teal-200 dark:border-teal-800",
                     "Tools & Platforms": "bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-200 dark:border-purple-800",
-                    "Domain Expertise": "bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-200 dark:border-green-800"
+                    "Herramientas y Plataformas": "bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-200 dark:border-purple-800",
+                    "Domain Expertise": "bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-200 dark:border-green-800",
+                    "Experiencia de Dominio": "bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-200 dark:border-green-800"
                   };
                   const colorClass = colorMap[category.title] || "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-200 dark:border-blue-800";
 
@@ -113,7 +125,7 @@ const About = () => {
             className="text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-slate-300 transition-colors duration-200 flex flex-col items-center gap-2"
             aria-label="Scroll to projects section"
           >
-            <span className="text-xs uppercase tracking-widest font-medium">View Case Studies</span>
+            <span className="text-xs uppercase tracking-widest font-medium">{t.viewCaseStudies}</span>
             <ChevronDown className="h-5 w-5 animate-bounce-slow" />
           </button>
         </div>

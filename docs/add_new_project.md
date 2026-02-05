@@ -11,7 +11,7 @@ Depending on the depth of coverage you want for a project, there are two main pa
 ### Path A: Quick Addition (Main Page Card Only)
 Use this if you just want a project card on the home page with outward links (GitHub/Demo).
 1. **Prepare a card image** (800x600px).
-2. **Update `userData.json`** with the project details.
+2. **Update `userData.json` and `userData_es.json`** with the project details.
 3. **Verify** and **Deploy**.
 
 > [!TIP]
@@ -24,9 +24,9 @@ Use this for major projects where you want a detailed, data-driven "Case Study" 
 1. **Follow Path A** (Create the card first).
 2. **Design the Content:** Ensure your narrative follows the business-impact structure.
    - **Reference Rules:** [sub-page-designe-rules.md](./sub-page-designe-rules.md)
-3. **Draft the Data:** Create a JSON data file for the project's case study.
-4. **Implement the Page:** Create a minimal page component and register the route.
-5. **Update Project Card Data:** Link the card to your subpage by adding `caseStudyPath` to `userData.json`.
+3. **Draft the Data:** Create JSON data files (`project.json` and `project_es.json`) for the project's case study.
+4. **Implement the Page:** Create a minimal page component (handling both languages) and register the route.
+5. **Update Project Card Data:** Link the card to your subpage by adding `caseStudyPath` to `userData.json` and `userData_es.json`.
 
 > [!TIP]
 > **Detailed Implementation Steps:** [add_new_project_page.md](./add_new_project_page.md)
@@ -47,8 +47,8 @@ Use this for major projects where you want a detailed, data-driven "Case Study" 
 ## Summary Checklist
 - [ ] Card image in `/public/projects/`
 - [ ] Figures/Screenshots in `/public/projects/Your Project/figures/`
-- [ ] Card entry in `src/data/userData.json`
-- [ ] (Optional) Link to project page via `caseStudyPath` in `src/data/userData.json`
+- [ ] Card entry in `src/data/userData.json` and `src/data/userData_es.json`
+- [ ] (Optional) Link to project page via `caseStudyPath` in both user data files
 
 ---
 

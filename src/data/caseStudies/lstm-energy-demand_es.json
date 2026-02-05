@@ -1,0 +1,102 @@
+{
+    "id": 1,
+    "slug": "lstm-energy-demand",
+    "title": "Pronóstico de Demanda de Energía con LSTM",
+    "subtitle": "Pronóstico horario de demanda eléctrica utilizando Deep Learning para la estabilidad de la red nacional",
+    "keyImpact": [
+        {
+            "value": "3.95%",
+            "label": "MAPE",
+            "description": "Error Porcentual Absoluto Medio en datos de prueba",
+            "icon": "Target"
+        },
+        {
+            "value": "168 Horas",
+            "label": "Ventana de Entrada",
+            "description": "Uso de secuencias de consumo histórico de 7 días",
+            "icon": "Activity"
+        },
+        {
+            "value": "24h Adelante",
+            "label": "Pronóstico",
+            "description": "Pronóstico multi-step para el consumo del día siguiente",
+            "icon": "TrendingUp"
+        }
+    ],
+    "proofOfConcept": {
+        "title": "Prueba de Concepto (Portfolio)",
+        "body": "Este es un proyecto profesional de Ciencia de Datos autoiniciado utilizando datos públicos reales para demostrar pronóstico end-to-end, modelado de deep learning y soporte a la decisión orientado a negocios para sistemas energéticos nacionales."
+    },
+    "sections": {
+        "overview": "Para apoyar la estabilidad de la red nacional y el despacho de energía eficiente en costos, desarrollé un modelo de deep learning utilizando redes neuronales LSTM (Long Short-Term Memory) para el pronóstico horario de demanda eléctrica. Utilizando datos públicos representativos de la red eléctrica de Bangladesh (PGCB), el modelo procesa secuencias de 168 horas para predecir patrones de consumo con alta precisión (3.95% MAPE), permitiendo una planificación de capacidad proactiva y asignación optimizada de recursos para un sistema que gestiona ~25,700 MW.",
+        "businessValue": [
+            "Estabilidad de la Red: Previene apagones y condiciones de sobrecarga mediante previsión precisa de demanda",
+            "Asignación de Recursos: Optimiza la generación a través de fuentes de carbón, gas, hidroeléctricas y renovables",
+            "Optimización de Costos: Empareja la oferta con la demanda para minimizar generación innecesaria y desperdicio de combustible",
+            "Planificación Basada en Datos: Reemplaza la programación basada en reglas con inteligencia predictiva"
+        ],
+        "keyResults": [
+            "Logré **3.95% MAPE** y **320.21 MW MAE** en pronóstico de demanda horaria",
+            "Capturé exitosamente ciclos diurnos y semanales utilizando redes **Long Short-Term Memory**",
+            "Implementé un horizonte de pronóstico **multi-step ahead (24 horas)**",
+            "Desarrollé un modelo listo para producción con más de **129,000 parámetros optimizados**"
+        ],
+        "benefits": [
+            "Despliegue proactivo de capacidad de generación antes de los picos de demanda",
+            "Sistema de alerta temprana para posibles desequilibrios oferta-demanda",
+            "Arquitectura escalable para pronósticos de red regionales o nacionales",
+            "Arquitectura de modelo exportable lista para despliegue en producción empresarial"
+        ],
+        "stakeholders": [
+            "Operadores de Red",
+            "Gerentes de Recursos Energéticos",
+            "Operaciones y Planificación",
+            "Estrategas de Infraestructura"
+        ],
+        "technologies": [
+            "Python",
+            "TensorFlow/Keras",
+            "Pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Streamlit"
+        ],
+        "methods": [
+            {
+                "name": "Redes Neuronales LSTM",
+                "description": "Arquitectura de triple capa con Batch Normalization y Dropout para mapeo robusto de secuencias"
+            },
+            {
+                "name": "Modelado de Secuencias",
+                "description": "Captura de dependencias temporales de largo alcance usando ventanas históricas de 7 días"
+            },
+            {
+                "name": "Validación Temporal",
+                "description": "División train-test respetando el orden cronológico para prevenir data leakage"
+            },
+            {
+                "name": "Suite de Optimización",
+                "description": "Gradient Clipping, Regularización L2 y Early Stopping para generalización del modelo"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/forecast.png",
+                "caption": "Pronóstico Contexto Completo - Predicciones del Modelo vs. Demanda Real de Red"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/forecast-zoomed.png",
+                "caption": "Captura Detallada del Ciclo Diurno - Seguimiento de Rendimiento en Pico y Valle"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/LSTM Energy Demand Prediction/figs/screenshot.png",
+                "caption": "App Streamlit (aplicación de prueba de concepto -> ver Live Demo)"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://energy-demand-forecasting-lstm.streamlit.app",
+        "github": "https://github.com/rolaseba/energy-demand-forecasting-lstm",
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

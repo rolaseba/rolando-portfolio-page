@@ -1,0 +1,104 @@
+{
+    "id": 4,
+    "slug": "material-cost-performance",
+    "title": "Comportamiento de Costos Materiales y Análisis de Proveedores",
+    "subtitle": "Framework de analítica de costos identificando riesgos de precios y desviaciones de proveedores para impulsar ahorros",
+    "keyImpact": [
+        {
+            "value": "USD 200K",
+            "label": "Ahorros Potenciales",
+            "description": "Optimización de costos anuales identificada",
+            "icon": "DollarSign"
+        },
+        {
+            "value": "Tiempo Real",
+            "label": "Sistema de Alerta",
+            "description": "Prevención estratégica de sobrecostos",
+            "icon": "Activity"
+        },
+        {
+            "value": "Multianual",
+            "label": "Alcance de Análisis",
+            "description": "Historial de compras unificado",
+            "icon": "Database"
+        }
+    ],
+    "sections": {
+        "overview": "Desarrollé un **framework de analítica de costos** para abordar **riesgos de precios** y **desviaciones de proveedores** dentro de las compras de materiales de almacén. El desafío fue transformar datos de compras de varios años en insights accionables para **ahorros estratégicos**. Abordé esto diseñando **indicadores de estabilidad de costos** especializados e implementando mecanismos de **alerta de sobrecostos en tiempo real** durante el proceso de compras. Esta solución empoderó exitosamente al equipo de compras con **evidencia objetiva** para negociaciones y **marcado automático** de aumentos de precios, conduciendo a ahorros significativos identificados y un **control presupuestario** mejorado.",
+        "businessValue": [
+            "Ahorros Directos: Identifica sobreprecios y cuantifica el impacto para renegociaciones",
+            "Control de Riesgos: Marca materiales inestables y prioriza ítems de alto gasto",
+            "Planificación Estratégica: Anticipa tendencias de precios para ajustar contratos acorde",
+            "Control Presupuestario: Evita fugas de capital en compras rutinarias"
+        ],
+        "keyResults": [
+            "Se identificaron **~USD 150-200K** en ahorros anuales potenciales",
+            "Se desarrollaron **indicadores especializados** para estabilidad vs. volatilidad",
+            "Se construyó una **herramienta de priorización visual** utilizando costo promedio anual",
+            "Se habilitó la **acción inmediata** sobre aumentos de precios antes de su aprobación"
+        ],
+        "benefits": [
+            "Evidencia objetiva para la responsabilidad de proveedores",
+            "Detección temprana de tendencias alcistas riesgosas",
+            "Claridad de decisión para ítems de alto gasto y alta volatilidad",
+            "Prevención automatizada de sobrecostos durante el proceso de compras"
+        ],
+        "stakeholders": [
+            "Compras / Abastecimiento",
+            "Finanzas",
+            "Operaciones de Almacén",
+            "Planificación de Supply Chain"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Plotly"
+        ],
+        "methods": [
+            {
+                "name": "Indicadores de Estabilidad de Costos",
+                "description": "Medición de consistencia de precios vs volatilidad"
+            },
+            {
+                "name": "Análisis de Variación Porcentual",
+                "description": "Detección de desviaciones entre compras consecutivas"
+            },
+            {
+                "name": "Priorización de Tendencias",
+                "description": "Comparación de tendencia a largo plazo vs promedio histórico"
+            },
+            {
+                "name": "Marcado Automático (Flagging)",
+                "description": "Alertas en tiempo real para detección estratégica de sobrecostos"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/overspend_alert2_alt.png",
+                "caption": "Herramienta de Alerta de Sobrecostos Estratégicos"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/cv_and_trend_alterated.png",
+                "caption": "Variabilidad de Costos vs Priorización de Tendencias"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_2_case_alt.png",
+                "caption": "Proveedor de Aceite Industrial - Análisis de Fluctuación de Precios"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_1_case_alt.png",
+                "caption": "Proveedor de Lubricantes Especiales - Detección de Desviación de Precios"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/supplier-segmentation.png",
+                "caption": "Segmentación de proveedores por Leadtime y Variación de Costos"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://warehouse-material-analysis-playground.pages.dev",
+        "github": null,
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

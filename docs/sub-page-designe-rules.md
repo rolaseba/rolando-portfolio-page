@@ -306,7 +306,18 @@ Esto **no es documentación técnica**, es **portfolio estratégico**.
 
 ---
 
-## 9️⃣ Regla final (UI + HR)
+## 9️⃣ Contenido Multilingüe (Español/Inglés)
+
+* **Todo el contenido** debe estar duplicado en archivos JSON:
+    * `nombre-proyecto.json` (Inglés)
+    * `nombre-proyecto_es.json` (Español)
+* Mantener la **misma estructura** de campos en ambos archivos.
+* El componente de página gestionará la carga condicional.
+* **No hardcodear** textos en el componente React; si agregas UI custom, usa `translations.ts`.
+
+---
+
+## 🔟 Regla final (UI + HR)
 
 > Si alguien de HR entiende el impacto del proyecto en 30 segundos
 > y un Tech Lead detecta solidez técnica en 2 minutos,

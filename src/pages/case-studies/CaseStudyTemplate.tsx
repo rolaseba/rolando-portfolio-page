@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { ExternalLink, ArrowLeft, TrendingDown, DollarSign, Factory, TrendingUp, Database, Server, Activity, Shield, Brain, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../../hooks/useLanguage';
+import { translations } from '../../data/translations';
 import CaseStudyHero from '../../components/case-study/CaseStudyHero';
 import KeyImpactCards, { type KeyImpactMetric } from '../../components/case-study/KeyImpactCards';
 import TechnologiesSection from '../../components/case-study/TechnologiesSection';
@@ -61,6 +63,9 @@ interface CaseStudyTemplateProps {
 }
 
 const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -81,7 +86,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                         className="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                     >
                         <ArrowLeft className="h-4 w-4" />
-                        <span className="text-sm font-medium">Back to Portfolio</span>
+                        <span className="text-sm font-medium">{t.backToPortfolio}</span>
                     </Link>
                 </div>
             </div>
@@ -115,7 +120,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 {/* Overview */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Overview</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.overview}</h2>
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                         <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                             <span
@@ -127,7 +132,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Business Value */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Business Value</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.businessValue}</h2>
                     <ul className="space-y-3">
                         {data.sections.businessValue.map((value, index) => (
                             <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
@@ -143,7 +148,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Key Results */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Key Results</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.keyResults}</h2>
                     <ul className="space-y-3">
                         {data.sections.keyResults.map((result, index) => (
                             <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
@@ -159,7 +164,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Key Benefits */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Key Benefits</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.keyBenefits}</h2>
                     <ul className="space-y-3">
                         {data.sections.benefits.map((benefit, index) => (
                             <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
@@ -175,7 +180,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Stakeholders Impacted */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Stakeholders Impacted</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.stakeholdersImpacted}</h2>
                     <ul className="space-y-2">
                         {data.sections.stakeholders.map((stakeholder, index) => (
                             <li key={index} className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -190,7 +195,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Methods & Algorithms */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Methods & Algorithms</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.methodsAlgorithms}</h2>
                     <ul className="space-y-4">
                         {data.sections.methods.map((method, index) => (
                             <li key={index} className="text-slate-600 dark:text-slate-300">
@@ -207,7 +212,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
 
                 {/* Access / Links */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Access</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{t.access}</h2>
                     <div className="flex flex-wrap gap-4">
                         {data.links.demo && (
                             <a
@@ -217,7 +222,7 @@ const CaseStudyTemplate = ({ data }: CaseStudyTemplateProps) => {
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
                             >
                                 <ExternalLink className="h-5 w-5" />
-                                Live Demo
+                                {t.liveDemo}
                             </a>
                         )}
                         {data.links.github && (

@@ -1,0 +1,98 @@
+{
+    "id": 2,
+    "slug": "hotel-cancellation-prediction",
+    "title": "Predicción de Cancelación de Reservas Hoteleras",
+    "subtitle": "Ensamble de Machine Learning para protección de ingresos y evaluación de riesgo de huéspedes",
+    "keyImpact": [
+        {
+            "value": "87.5%",
+            "label": "Precisión/Accuracy",
+            "description": "Detección de cancelaciones de alta precisión (86% sensibilidad)",
+            "icon": "Target"
+        },
+        {
+            "value": "$670K",
+            "label": "Impacto en Ingresos",
+            "description": "Pérdida anual estimada abordada para hoteles medianos",
+            "icon": "DollarSign"
+        },
+        {
+            "value": "Enfoque ROI",
+            "label": "Optimización",
+            "description": "Overbooking dinámico y gestión de canales",
+            "icon": "TrendingUp"
+        }
+    ],
+    "proofOfConcept": {
+        "title": "Prueba de Concepto (Portfolio)",
+        "body": "Este es un proyecto profesional de portafolio de Ciencia de Datos construido utilizando un dataset real de reservas hoteleras para demostrar el uso de ensamble de modelos (Ensemble Learning), modelado de riesgo de cancelación y soporte a la decisión enfocado en ingresos para operaciones hoteleras."
+    },
+    "sections": {
+        "overview": "Este proyecto aborda un problema mayor de ingresos para los hoteles: las cancelaciones inesperadas de huéspedes. Desarrollé un modelo predictivo utilizando técnicas avanzadas de machine learning sobre datos reales de reservas para calcular el riesgo de cancelación de cada reserva. El resultado es un dashboard interactivo que muestra cómo los equipos del hotel pueden usar estas predicciones para tomar mejores decisiones de overbooking, reducir pérdidas financieras y mejorar la planificación operativa.",
+        "businessValue": [
+            "Protección de Ingresos: Minimiza pérdidas por cancelaciones tardías y no-shows mediante overbooking basado en datos",
+            "Eficiencia Operativa: Optimiza la gestión de personal e inventario basado en la ocupación predicha",
+            "Optimización de Canales: Mejora el manejo de reservas de alto riesgo de Agencias de Viaje Online (OTAs)",
+            "Precisión en Marketing: Habilita campañas de retención dirigidas a huéspedes de alto riesgo"
+        ],
+        "keyResults": [
+            "Se logró **87.5% de precisión** y **86% de sensibilidad** en la detección de cancelaciones",
+            "Se identificó que **tiempos de anticipación largos** se correlacionan con un **riesgo de cancelación 3.2x mayor**",
+            "Se encontró que los **huéspedes recurrentes** tienen una probabilidad **68% menor** de cancelar",
+            "Se cuantificó que un **aumento de $50** en la tarifa promedio (ADR) lleva a un **riesgo 16% mayor** de cancelación"
+        ],
+        "benefits": [
+            "Protección de los márgenes de beneficio del hotel a través de overbooking estratégico",
+            "Experiencia del huésped mejorada mediante mejor disponibilidad de inventario",
+            "Estrategias de precios y promoción basadas en datos para minimizar riesgos",
+            "Metodología escalable transferible a operaciones hoteleras globales"
+        ],
+        "stakeholders": [
+            "Gerentes de Ingresos (Revenue Managers)",
+            "Gerentes Generales de Hotel",
+            "Equipos de Marketing y CRM",
+            "Recepción y Operaciones"
+        ],
+        "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "XGBoost",
+            "CatBoost",
+            "Imbalanced-learn"
+        ],
+        "methods": [
+            {
+                "name": "Ensemble Learning",
+                "description": "Voting Classifier combinando Random Forest, XGBoost y CatBoost para predicciones robustas"
+            },
+            {
+                "name": "Análisis SHAP",
+                "description": "Interpretabilidad global y local para entender el 'por qué' detrás de cada riesgo de cancelación"
+            },
+            {
+                "name": "Balanceo de Clases",
+                "description": "Técnicas de Under-sampling y SVMSMOTE para manejar datos de cancelación desbalanceados"
+            },
+            {
+                "name": "Ingeniería de Características",
+                "description": "Creación de más de 20 variables personalizadas incluyendo ratios de tiempo de anticipación e indicadores estacionales"
+            }
+        ],
+        "visualEvidence": [
+            {
+                "image": "/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/shap_waterfall_high_risk.png",
+                "caption": "SHAP Waterfall Plot - Interpretabilidad local para una reserva de alto riesgo"
+            },
+            {
+                "image": "/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/app.png",
+                "caption": "Arquitectura del Modelo de Machine Learning y Framework de Evaluación"
+            }
+        ]
+    },
+    "links": {
+        "demo": "https://hotel-reservation-prediction.streamlit.app",
+        "github": "https://github.com/rolaseba/hotel-reservation-prediction",
+        "linkedin": "https://www.linkedin.com/in/sjrolando/"
+    }
+}

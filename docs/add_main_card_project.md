@@ -7,7 +7,7 @@ This guide explains how to add a new project card to the main portfolio page (Pr
 ## What This Guide Covers
 
 - ✅ Adding a project card to the main Projects section
-- ✅ Updating `src/data/userData.json`
+- ✅ Updating `src/data/userData.json` & `userData_es.json`
 - ❌ Creating case study pages (see [add_new_project_page.md](./add_new_project_page.md))
 
 ---
@@ -30,13 +30,13 @@ cp ~/path/to/card-image.png public/projects/your-project-name.png
 
 ---
 
-## Step 2: Update userData.json
+## Step 2: Update userData.json & userData_es.json
 
-### 2.1 Open the File
-Open `src/data/userData.json` and locate the `projects` array.
+### 2.1 Open the Files
+Open `src/data/userData.json` (English) and `src/data/userData_es.json` (Spanish). Locate the `projects` array in both.
 
 ### 2.2 Add Your Project
-Add a new object to the `projects` array:
+Add a new object to the `projects` array in BOTH files. Ensure the Spanish file has translated `title`, `description`, and `results`.
 
 ```json
 {
@@ -141,7 +141,7 @@ The case study page creation involves:
 - Creating JSON data file with detailed content
 - Creating page component
 - Adding routing to `App.tsx`
-- Updating `userData.json` with `caseStudyPath`
+- Updating `userData.json` and `userData_es.json` with `caseStudyPath`
 
 **Estimated time:** 15-30 minutes additional work
 
@@ -152,6 +152,7 @@ The case study page creation involves:
 ### Files to Update
 - [ ] Card image: `/public/projects/your-project-name.png`
 - [ ] Project data: `/src/data/userData.json` (projects array)
+- [ ] Project data (Spanish): `/src/data/userData_es.json` (projects array)
 
 ### Testing
 - [ ] Dev server runs without errors

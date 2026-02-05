@@ -2,9 +2,13 @@ import { ChevronDown, Github, Linkedin, Mail, Play } from 'lucide-react';
 import { useState } from 'react';
 import { useUserData } from '../../hooks/useUserData';
 import VideoModal from '../ui/VideoModal';
+import { useLanguage } from '../../hooks/useLanguage';
+import { translations } from '../../data/translations';
 
 const Hero = () => {
   const { personal, social } = useUserData();
+  const { language } = useLanguage();
+  const t = translations[language];
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const scrollToAbout = () => {
@@ -26,11 +30,11 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-900/50 rounded-full">
                 <span className="text-sm font-semibold text-blue-900 dark:text-blue-300 tracking-wide uppercase">
-                  Available for Operations & Analytics Roles
+                  {t.availableForWork}
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight tracking-tight">
-                Hi, I'm{' '}
+                {t.hiIm}{' '}
                 <span className="text-blue-900 dark:text-blue-400">
                   {personal.name}
                 </span>
@@ -45,11 +49,14 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200 shadow-lg shadow-slate-900/20 dark:shadow-blue-900/40">
-                View Operational Projects
-              </a>
+              <button
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-slate-800 dark:hover:bg-blue-700 transition-all duration-200 shadow-lg shadow-slate-900/20 dark:shadow-blue-900/40"
+              >
+                {t.viewOperationalProjects}
+              </button>
               <a href="./CV%20-%20Sebastian%20Rolando%20-%20EN.pdf" className="border-2 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 px-8 py-4 rounded-md font-semibold hover:border-slate-900 dark:hover:border-white hover:text-slate-900 dark:hover:text-white transition-all duration-200" download>
-                Download Resume
+                {t.downloadResume}
               </a>
             </div>
 
@@ -107,7 +114,7 @@ const Hero = () => {
                 <div className="p-1 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors">
                   <Play className="w-4 h-4 fill-current" />
                 </div>
-                Watch Intro
+                {t.watchIntro}
               </button>
             </div>
           </div>
@@ -120,7 +127,7 @@ const Hero = () => {
             className="text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-slate-300 transition-colors duration-200 flex flex-col items-center gap-2"
             aria-label="Scroll to about section"
           >
-            <span className="text-xs uppercase tracking-widest font-medium">Discover More</span>
+            <span className="text-xs uppercase tracking-widest font-medium">{t.discoverMore}</span>
             <ChevronDown className="h-5 w-5 animate-bounce" />
           </button>
         </div>
