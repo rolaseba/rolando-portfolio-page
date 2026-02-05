@@ -19,15 +19,16 @@
   },
   "about": {
     "description": [
-      "I am an Electronics Engineer and Data Scientist specialized in Industrial Operations, with experience applying Machine Learning to solve complex problems in Supply Chain, Maintenance, Procurement, Quality, and Production.",
-      "I have designed and implemented end-to-end solutions, generating savings of ~USD 255K and reducing stock-outs from 14% to 2%, among other achievements. My expertise in Python (Pandas, Sklearn, Statsmodels), SQL, and statistical/time series analysis combines with a deep understanding of industrial processes, turning data into decisions with direct impact on efficiency and costs.",
-      "In the last five companies I worked, I have developed new roles, led multidisciplinary teams, and bridged business goals with technology, with a clear focus on creating value in challenging environments."
+      "I am an Electronics Engineer and a Senior Data Analyst specialized in industrial operations. My approach goes beyond technical analysis: I act as a strategic bridge between data, plant-floor processes, and business objectives.",
+      "In the last five companies I've worked for, my role has involved creating and implementing the analytics function from the ground up, leading multidisciplinary teams, and aligning technology with concrete operational goals. I don't just build models; I integrate solutions into the daily workflow to generate sustainable value in challenging environments.",
+      "My mission is clear: to translate the complexity of industrial data into actionable decisions that improve efficiency, reduce costs, and increase operational reliability."
     ],
     "whatIDo": [
       "I turn complex industrial data into decisions",
       "I create analytics solutions that save costs",
       "I improve supply chains, inventory, and reliability",
-      "I connect operations, data, and business value"
+      "I connect operations, data, and business value",
+      "I work with multidisciplinary teams to implement practical tools"
     ],
     "stats": [
       {
