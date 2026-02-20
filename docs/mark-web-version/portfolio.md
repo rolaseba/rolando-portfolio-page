@@ -16,11 +16,11 @@ _Transforming industrial data into operational value through Machine Learning an
 
 ## About Me
 
-I am an Electronics Engineer and Data Scientist specialized in Industrial Operations, with experience applying Machine Learning to solve complex problems in Supply Chain, Maintenance, Procurement, Quality, and Production.
+I am an Electronics Engineer and a Senior Data Analyst specialized in industrial operations. My approach goes beyond technical analysis: I act as a strategic bridge between data, plant-floor processes, and business objectives.
 
-I have designed and implemented end-to-end solutions, generating savings of ~USD 255K and reducing stock-outs from 14% to 2%, among other achievements. My expertise in Python (Pandas, Sklearn, Statsmodels), SQL, and statistical/time series analysis combines with a deep understanding of industrial processes, turning data into decisions with direct impact on efficiency and costs.
+In the last five companies I've worked for, my role has involved creating and implementing the analytics function from the ground up, leading multidisciplinary teams, and aligning technology with concrete operational goals. I don't just build models; I integrate solutions into the daily workflow to generate sustainable value in challenging environments.
 
-In the last five companies I worked, I have developed new roles, led multidisciplinary teams, and bridged business goals with technology, with a clear focus on creating value in challenging environments.
+My mission is clear: to translate the complexity of industrial data into actionable decisions that improve efficiency, reduce costs, and increase operational reliability.
 
 ### Key Highlights
 
@@ -28,6 +28,7 @@ In the last five companies I worked, I have developed new roles, led multidiscip
 - I create analytics solutions that save costs
 - I improve supply chains, inventory, and reliability
 - I connect operations, data, and business value
+- I work with multidisciplinary teams to implement practical tools
 
 ### Stats
 
@@ -153,8 +154,8 @@ Inventory Management (MRO), Supply Chain, Procurement, 5S, TPM, Maintenance Mana
 
 ## Projects Overview
 
-### LSTM Energy Demand Prediction
-![LSTM Energy Demand Prediction](/rolando-portfolio-page/projects/lstm-energy.png)
+### LSTM Energy Demand Forecasting
+![LSTM Energy Demand Forecasting](/rolando-portfolio-page/projects/lstm-energy.png)
 
 **Category:** Time Series | **Status:** PoC
 
@@ -170,22 +171,22 @@ LSTM-based model for hourly electricity demand forecasting using PGCB (Banglades
 
 [GitHub](https://github.com/rolaseba/energy-demand-forecasting-lstm) | [Live Demo](https://energy-demand-forecasting-lstm.streamlit.app) | [Full Case Study](#lstm-energy-demand)
 
-### Hotel Reservation Cancellation Prediction
-![Hotel Reservation Cancellation Prediction](/rolando-portfolio-page/projects/hotel-cancellation.png)
+### Material Cost Behavior & Supplier Performance Analysis
+![Material Cost Behavior & Supplier Performance Analysis](/rolando-portfolio-page/projects/cost-behavior.png)
 
-**Category:** Machine Learning | **Status:** PoC
+**Category:** Supply Chain Analytics | **Status:** Implemented
 
-Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.
+Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.
 
-**Technologies:** Python, Scikit-learn, XGBoost, CatBoost, SVMSMOTE, Streamlit
+**Technologies:** Python, Pandas, NumPy, Plotly
 
 **Key Results:**
-- 88.2% accuracy, 84% sensitivity
-- 83% precision for efficient budget allocation
-- Production-ready Streamlit application
-- Addresses $670K annual revenue loss
+- ~150-200 KUSD potential annual savings
+- Identified high-value, high-risk items for prioritization
+- Real-time overspend alerts prevent losses
+- Supplier accountability supported by objective evidence
 
-[GitHub](https://github.com/rolaseba/hotel-reservation-prediction) | [Live Demo](https://hotel-reservation-prediction.streamlit.app) | [Full Case Study](#hotel-cancellation-prediction)
+[Live Demo](https://warehouse-material-analysis-playground.pages.dev) | [Full Case Study](#material-cost-performance)
 
 ### Spare Parts Consumption Anomaly Detection
 ![Spare Parts Consumption Anomaly Detection](/rolando-portfolio-page/projects/anomally-detection.png)
@@ -203,22 +204,22 @@ Anomaly detection system for industrial warehouse item consumption using EWMA, Z
 
 [Live Demo](https://deepnote.com/app/data-science-labs-a5bc/Spare-parts-use-in-assets-6dcee31c-36eb-4076-bd5b-8213b3902955?utm_content=6dcee31c-36eb-4076-bd5b-8213b3902955&item_1=193799&__run=true) | [Full Case Study](#spare-parts-anomaly-detection)
 
-### Material Cost Behavior & Supplier Performance Analysis
-![Material Cost Behavior & Supplier Performance Analysis](/rolando-portfolio-page/projects/cost-behavior.png)
+### Hotel Reservation Cancellation Prediction
+![Hotel Reservation Cancellation Prediction](/rolando-portfolio-page/projects/hotel-cancellation.png)
 
-**Category:** Supply Chain Analytics | **Status:** Implemented
+**Category:** Machine Learning | **Status:** PoC
 
-Cost analytics framework identifying pricing risks, supplier deviations, and savings opportunities in warehouse purchases. Includes real-time overspend alert tool that flags excessive price increases at purchase order creation moment.
+Ensemble machine learning model predicting hotel booking cancellations with 88.2% accuracy. Addresses $670K annual revenue loss from cancellations using balanced precision (83%) and sensitivity (84%) metrics, optimizing retention campaign efficiency.
 
-**Technologies:** Python, Pandas, NumPy, Plotly
+**Technologies:** Python, Scikit-learn, XGBoost, CatBoost, SVMSMOTE, Streamlit
 
 **Key Results:**
-- ~150-200 KUSD potential annual savings
-- Identified high-value, high-risk items for prioritization
-- Real-time overspend alerts prevent losses
-- Supplier accountability supported by objective evidence
+- 88.2% accuracy, 84% sensitivity
+- 83% precision for efficient budget allocation
+- Production-ready Streamlit application
+- Addresses $670K annual revenue loss
 
-[Full Case Study](#material-cost-performance)
+[GitHub](https://github.com/rolaseba/hotel-reservation-prediction) | [Live Demo](https://hotel-reservation-prediction.streamlit.app) | [Full Case Study](#hotel-cancellation-prediction)
 
 ### Warehouse Strategy & Obsolescence Reduction Project
 ![Warehouse Strategy & Obsolescence Reduction Project](/rolando-portfolio-page/projects/last_time_moved_alt.png)
@@ -277,20 +278,20 @@ Interactive hierarchical visualization tool mapping production processes and PLC
 # Case Studies
 
 <a id='lstm-energy-demand'></a>
-## LSTM Energy Demand Prediction
+## LSTM Energy Demand Forecast
 
 _Hourly electricity demand forecasting using Deep Learning for national grid stability_
 
 ### Key Impact Metrics
 - **MAPE:** 3.95% (Mean Absolute Percentage Error on test set data)
 - **Input Window:** 168 Hours (Using 7 days of historical energy consumption sequences)
-- **Forecasting:** 24h Ahead (Multi-step prediction for the next day's consumption)
+- **Forecasting:** 24h Ahead (Multi-step forecast for the next day's consumption)
 
 ### Portfolio Proof of Concept
 This is a self-initiated professional Data Science project built using real-world public data to demonstrate end-to-end forecasting, deep learning modeling, and business-oriented decision support for national energy systems.
 
 ### Overview
-Developed an LSTM-based deep learning model to forecast hourly electricity demand using public data representative of Bangladesh’s national power grid operations (PGCB context), managing ~25,700 MW of installed capacity. The solution enables proactive grid management, resource optimization, and cost reduction by predicting demand patterns with high accuracy using 168-hour sequence inputs.
+To support national grid stability and cost-efficient energy dispatch, I developed a deep learning model using Long Short-Term Memory (LSTM) neural networks for hourly electricity demand forecasting. Using public data representative of Bangladesh's power grid (PGCB), the model processes 168-hour sequences to predict consumption patterns with high accuracy (3.95% MAPE), enabling proactive capacity planning and optimized resource allocation for a system managing ~25,700 MW.
 
 ### Business Value
 - Grid Stability: Prevents blackouts and overload conditions through accurate demand foresight
@@ -335,58 +336,63 @@ Python, TensorFlow/Keras, Pandas, NumPy, Scikit-learn, Streamlit
 
 ---
 
-<a id='hotel-cancellation-prediction'></a>
-## Hotel Reservation Cancellation Prediction
+<a id='material-cost-performance'></a>
+## Material Cost Behavior & Supplier Performance Analysis
 
-_Ensemble Machine Learning for revenue protection and guest risk assessment_
+_Cost analytics framework identifying pricing risks and supplier deviations to drive savings_
 
 ### Key Impact Metrics
-- **Accuracy:** 87.5% (High-precision cancellation detection (86% sensitivity))
-- **Revenue Impact:** $670K (Estimated annual loss addressed for mid-sized hotels)
-- **Optimization:** ROI Focus (Dynamic overbooking and channel management)
-
-### Portfolio Proof of Concept
-This is a self-initiated professional Data Science portfolio project built using a well-known real-world hotel reservation dataset to demonstrate ensemble machine learning, cancellation risk modeling, and revenue-focused decision support for hospitality operations.
+- **Potential Savings:** USD 200K (Identified annual cost optimization)
+- **Alert System:** Real-time (Strategic overspend prevention)
+- **Analysis Scope:** Multi-year (Unified purchasing history)
 
 ### Overview
-Developed an ensemble machine learning model to predict booking cancellations using historical hotel reservation data from two Portuguese hotels. The solution enables revenue protection through proactive risk assessment, dynamic overbooking, and targeted guest segmentation, directly addressing an estimated $670K in annual revenue loss.
+I developed a **cost analytics framework** to address **pricing risks** and **supplier deviations** within warehouse material purchases. The challenge was to transform multi-year purchasing data into actionable insights for **strategic savings**. I tackled this by engineering specialized **cost stability indicators** and implementing **real-time overspend alert** mechanisms during procurement. This solution successfully empowered the procurement team with **objective evidence** for negotiations and **automated flagging** of price increases, leading to significant identified savings and enhanced **budget control**.
 
 ### Business Value
-- Revenue Protection: Minimizes losses from late cancellations and no-shows through data-driven overbooking
-- Operational Efficiency: Optimizes staffing and inventory management based on predicted occupancy
-- Channel Optimization: Improves handling of high-risk Online Travel Agency (OTA) bookings
-- Marketing Precision: Enables targeted retention campaigns for high-risk guests
+- Direct Savings: Identify overpricing and quantify impact for renegotiations
+- Risk Control: Flag unstable materials and prioritize high-spend items
+- Strategic Planning: Anticipate price trends to adjust contracts accordingly
 
 ### Key Results
-- Achieved **87.5% accuracy** and **86% sensitivity** in cancellation detection
-- Identified that **long lead times** correlate with a **3.2x higher cancellation risk**
-- Found that **repeat guests** have a **68% lower** likelihood of cancelling
-- Quantified that a **$50 increase** in ADR leads to a **16% higher risk** of cancellation
+- Identified **~USD 150-200K** in potential annual savings
+- Developed **specialized indicators** for stability vs. volatility
+- Built a **visual prioritization tool** using average yearly cost
+- Enabled **immediate action** on price increases before approval
 
 ### Benefits
-- Protection of hotel profit margins through strategic overbooking
-- Enhanced guest experience through better inventory availability
-- Data-driven pricing and promotion strategies to minimize risk
-- Scalable methodology transferable to global hotel operations
+- Objective evidence for supplier accountability
+- Early detection of risky upward trends
+- Decision clarity for high-spend and high-volatility items
+- Automated overspend prevention during the procurement process
 
 ### Technologies Used
-Python, Pandas, Scikit-learn, XGBoost, CatBoost, Imbalanced-learn
+Python, Pandas, NumPy, Plotly
 
 ### Methods & Techniques
-- **Ensemble Learning:** Voting Classifier combining Random Forest, XGBoost, and CatBoost for robust predictions
-- **SHAP Analysis:** Global and local interpretability to understand the 'why' behind each cancellation risk
-- **Class Balancing:** Under-sampling and SVMSMOTE techniques to handle imbalanced cancellation data
-- **Feature Engineering:** Created 20+ custom features including lead time ratios and seasonal indicators
+- **Cost Stability Indicators:** Measuring price consistency vs volatility
+- **Percent Change Analysis:** Detecting deviations between consecutive purchases
+- **Trend Prioritization:** Long-term trend vs historical average comparison
+- **Automated Flagging:** Real-time alerts for strategic overspend detection
 
 ### Visual Evidence
-![SHAP Waterfall Plot - Local interpretability for a high-risk reservation](/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/shap_waterfall_high_risk.png)
-*SHAP Waterfall Plot - Local interpretability for a high-risk reservation*
+![Strategic Overspend Alert Tool](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/overspend_alert2_alt.png)
+*Strategic Overspend Alert Tool*
 
-![Machine Learning Model Architecture and Evaluation Framework](/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/app.png)
-*Machine Learning Model Architecture and Evaluation Framework*
+![Cost Variability vs Trend Prioritization](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/cv_and_trend_alterated.png)
+*Cost Variability vs Trend Prioritization*
+
+![Industrial Oil Supplier - Price Fluctuation Analysis](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_2_case_alt.png)
+*Industrial Oil Supplier - Price Fluctuation Analysis*
+
+![Specialty Lubricant Supplier - Price Deviation Detection](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_1_case_alt.png)
+*Specialty Lubricant Supplier - Price Deviation Detection*
+
+![Supplier segmentation by Leadtime and Cost Variation](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/supplier-segmentation.png)
+*Supplier segmentation by Leadtime and Cost Variation*
 
 ### Links
-[Demo](https://hotel-reservation-prediction.streamlit.app) | [Github](https://github.com/rolaseba/hotel-reservation-prediction) | [Linkedin](https://www.linkedin.com/in/sjrolando/)
+[Demo](https://warehouse-material-analysis-playground.pages.dev) | [Github](None) | [Linkedin](https://www.linkedin.com/in/sjrolando/)
 
 
 ---
@@ -402,7 +408,7 @@ _Detecting abnormal spare parts usage to prevent downtime and optimize maintenan
 - **Industrial Plant:** 350K TN (Malt production capacity/year)
 
 ### Overview
-This project detects anomalies in item consumption based on historical dispatch data from an industrial warehouse. It integrates data wrangling, time series analysis, seasonality detection, and anomaly detection techniques to identify unusual dispatch behavior for specific inventory items. The system supports proactive maintenance and stock control by highlighting abnormal consumption patterns before they escalate into critical failures.
+I developed an **anomaly detection system** for **spare parts consumption** in an industrial warehouse to control rising costs and prevent **operational failures**. The challenge was to distinguish **normal operational variability** from **abnormal consumption patterns** using **historical dispatch data**. I tackled this by applying **time-series analysis** and **statistical modeling** techniques, including **EWMA, Z-score, and CUSUM**. This solution successfully enabled **proactive maintenance actions** and optimized **inventory control**, leading to a significant reduction in **unplanned downtime** and substantial **cost savings** from prevented unnecessary consumption.
 
 ### Business Value
 - Early detection of equipment failures and material misuse
@@ -449,60 +455,58 @@ Python, Pandas, NumPy, Plotly, SciPy, Matplotlib, Seaborn
 
 ---
 
-<a id='material-cost-performance'></a>
-## Material Cost Behavior & Supplier Performance Analysis
+<a id='hotel-cancellation-prediction'></a>
+## Hotel Reservation Cancellation Prediction
 
-_Cost analytics framework identifying pricing risks and supplier deviations to drive savings_
+_Ensemble Machine Learning for revenue protection and guest risk assessment_
 
 ### Key Impact Metrics
-- **Potential Savings:** USD 200K (Identified annual cost optimization)
-- **Alert System:** Real-time (Strategic overspend prevention)
-- **Analysis Scope:** Multi-year (Unified purchasing history)
+- **Accuracy:** 87.5% (High-precision cancellation detection (86% sensitivity))
+- **Revenue Impact:** $670K (Estimated annual loss addressed for mid-sized hotels)
+- **Optimization:** ROI Focus (Dynamic overbooking and channel management)
+
+### Portfolio Proof of Concept
+This is a self-initiated professional Data Science portfolio project built using a well-known real-world hotel reservation dataset to demonstrate ensemble machine learning, cancellation risk modeling, and revenue-focused decision support for hospitality operations.
 
 ### Overview
-This project delivers a specialized cost analytics framework designed to identify pricing risks, detect supplier deviations, and highlight opportunities for savings in warehouse material purchases. It combines multi-year purchasing history with advanced data preparation to create custom performance indicators for cost stability and price change detection. The framework features a real-time overspend alert tool that flags excessive price increases during purchase order creation, empowering procurement teams to take immediate action.
+This project addresses a major revenue problem for hotels: unexpected guest cancellations. I developed a predictive model using advanced machine learning techniques on real reservation data to calculate the cancellation risk for each booking. The result is an interactive dashboard that shows how hotel teams can use these predictions to make better overbooking decisions, reduce financial losses, and improve operational planning.
 
 ### Business Value
-- Direct Savings: Identify overpricing and quantify impact for renegotiations
-- Risk Control: Flag unstable materials and prioritize high-spend items
-- Strategic Planning: Anticipate price trends to adjust contracts accordingly
+- Revenue Protection: Minimizes losses from late cancellations and no-shows through data-driven overbooking
+- Operational Efficiency: Optimizes staffing and inventory management based on predicted occupancy
+- Channel Optimization: Improves handling of high-risk Online Travel Agency (OTA) bookings
+- Marketing Precision: Enables targeted retention campaigns for high-risk guests
 
 ### Key Results
-- Identified **~USD 150-200K** in potential annual savings
-- Developed **specialized indicators** for stability vs. volatility
-- Built a **visual prioritization tool** using average yearly cost
-- Enabled **immediate action** on price increases before approval
+- Achieved **87.5% accuracy** and **86% sensitivity** in cancellation detection
+- Identified that **long lead times** correlate with a **3.2x higher cancellation risk**
+- Found that **repeat guests** have a **68% lower** likelihood of cancelling
+- Quantified that a **$50 increase** in ADR leads to a **16% higher risk** of cancellation
 
 ### Benefits
-- Objective evidence for supplier accountability
-- Early detection of risky upward trends
-- Decision clarity for high-spend and high-volatility items
-- Automated overspend prevention during the procurement process
+- Protection of hotel profit margins through strategic overbooking
+- Enhanced guest experience through better inventory availability
+- Data-driven pricing and promotion strategies to minimize risk
+- Scalable methodology transferable to global hotel operations
 
 ### Technologies Used
-Python, Pandas, NumPy, Plotly
+Python, Pandas, Scikit-learn, XGBoost, CatBoost, Imbalanced-learn
 
 ### Methods & Techniques
-- **Cost Stability Indicators:** Measuring price consistency vs volatility
-- **Percent Change Analysis:** Detecting deviations between consecutive purchases
-- **Trend Prioritization:** Long-term trend vs historical average comparison
-- **Automated Flagging:** Real-time alerts for strategic overspend detection
+- **Ensemble Learning:** Voting Classifier combining Random Forest, XGBoost, and CatBoost for robust predictions
+- **SHAP Analysis:** Global and local interpretability to understand the 'why' behind each cancellation risk
+- **Class Balancing:** Under-sampling and SVMSMOTE techniques to handle imbalanced cancellation data
+- **Feature Engineering:** Created 20+ custom features including lead time ratios and seasonal indicators
 
 ### Visual Evidence
-![Strategic Overspend Alert Tool](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/overspend_alert2_alt.png)
-*Strategic Overspend Alert Tool*
+![SHAP Waterfall Plot - Local interpretability for a high-risk reservation](/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/shap_waterfall_high_risk.png)
+*SHAP Waterfall Plot - Local interpretability for a high-risk reservation*
 
-![Cost Variability vs Trend Prioritization](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/cv_and_trend_alterated.png)
-*Cost Variability vs Trend Prioritization*
-
-![Industrial Oil Supplier - Price Fluctuation Analysis](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_2_case_alt.png)
-*Industrial Oil Supplier - Price Fluctuation Analysis*
-
-![Specialty Lubricant Supplier - Price Deviation Detection](/rolando-portfolio-page/projects/Material Cost Behavior & Supplier Performance Analysis/figures/oil_supplier_1_case_alt.png)
-*Specialty Lubricant Supplier - Price Deviation Detection*
+![Machine Learning Model Architecture and Evaluation Framework](/rolando-portfolio-page/projects/Hotel Reservation Cancellation Prediction/figures/app.png)
+*Machine Learning Model Architecture and Evaluation Framework*
 
 ### Links
-[Demo](None) | [Github](None) | [Linkedin](https://www.linkedin.com/in/sjrolando/)
+[Demo](https://hotel-reservation-prediction.streamlit.app) | [Github](https://github.com/rolaseba/hotel-reservation-prediction) | [Linkedin](https://www.linkedin.com/in/sjrolando/)
 
 
 ---
@@ -518,7 +522,7 @@ _Optimizing inventory dynamics and reducing immobilized capital through data-dri
 - **Capital at Risk:** USD 500K+ (Quantified risk from inactive materials)
 
 ### Overview
-This project addressed the challenge of analyzing inventory dynamics and rotation within a complex warehouse environment using data from multiple non-integrated management systems. By consolidating and harmonizing fragmented datasets, I implemented a comprehensive framework of 47 custom metrics (19 movement-related and 28 cost-related). This solution enables systematic identification of obsolescence, realigns replenishment strategies (ROP, EOQ), and optimizes budget allocation towards actual material usage.
+I led a project to tackle **inventory obsolescence** and **capital risk** by unifying data from multiple fragmented warehouse systems. The goal was to identify inactive stock and **quantify the financial exposure** from these materials. I designed a framework of **47 custom metrics** that detected obsolete items and calculated **capital at risk** from prolonged inactivity. This transformed scattered data into a strategic tool for **inventory optimization**, enabling both the recovery of immobilized value and the **prevention of future capital tie-up**.
 
 ### Business Value
 - Integrated view of fragmented systems: Unified decision-making framework from raw data
@@ -526,8 +530,8 @@ This project addressed the challenge of analyzing inventory dynamics and rotatio
 - Budget Optimization: Shifted financial resources toward real material usage, avoiding immobilization
 
 ### Key Results
-- Identified **40-50%** of catalog as potentially obsolete or immobilized
-- Quantified **several hundred KUSD** in value for materials inactive for 1-3 years
+- Identified **40-50%** of catalog as potentially obsolete or immobilized (defined more than 3 years)
+- Quantified **USD 500K+** in capital at risk from materials inactive for 1-3 years
 - Detected hundreds of items with **zero movement since creation**
 - Re-calibrated replenishment parameters (**ROP, EOQ**) based on actual behavior
 
@@ -576,7 +580,7 @@ _Leveraging 13 years of historical data for production yield and quality optimiz
 - **Advanced Stats:** Applied (Pearson, Cramér’s V, ANOVA/Tukey)
 
 ### Overview
-This project was for optimizing malt production by analyzing 13 years of historical data from a 350 TN/year plant. By focusing on physicochemical, process, and quality parameters, the study applied advanced statistical methods and feature selection to identify the variables with the greatest influence on production yield and costs. The framework bridges the technical process control gap with commercial decision-making.
+I developed a **production optimization framework** for a malt manufacturing plant by analyzing 13 years of historical operational data. The challenge was to identify which of many **process parameters** most significantly influenced **production yield** and **quality outcomes**. To address this, I applied **advanced statistical methods**—including correlation analysis and hypothesis testing—to evaluate the complex relationships between variables. This analysis successfully bridged the gap between technical process control and commercial strategy, providing actionable insights for **process improvement** and **data-driven pricing** decisions.
 
 ### Business Value
 - Operationally: Pinpoints parameters influencing yield and quality to guide process optimization
@@ -625,7 +629,7 @@ _Interactive hierarchical visualization tool mapping production processes and PL
 - **Visual Tool:** Interactive (Dynamic graph with hover details)
 
 ### Overview
-This project focused on developing a **mapping and visualization tool** that enabled the identification and organization of **production processes** and their **physical sensors (PLC tags)** into a clear hierarchical structure. The tool was key and necessary to bridge the technical complexity of the plant with the needs of the global digitalization project, ensuring that detailed local process and sensor information could be standardized and successfully integrated into the corporate software **Aveva PI**.
+I developed an **interactive hierarchical visualization tool** using **Python** and Plotly to map **production processes and PLC sensors**, transforming complex plant data into a standardized, **Aveva PI-ready** structure. This established a clear digitalization foundation, reducing technical complexity and enabling **global data alignment** for corporate integration.
 
 ### Business Value
 - **Standardization**: clear and hierarchical organization of processes and PLC tags.
